@@ -1,0 +1,601 @@
+
+
+<div class="theme-config">
+    <div class="theme-config-box">
+        <div class="spin-icon">
+            <i class="fa fa-cogs fa-spin"></i>
+        </div>
+        <div class="skin-setttings">
+            <div class="title">Configuración</div>
+            <div class="setings-item">
+                    <span>
+                        Ocultar menu
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
+                        <label class="onoffswitch-label" for="collapsemenu">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setings-item">
+                    <span>
+                        Acotar/Extender
+                    </span>
+
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
+                        <label class="onoffswitch-label" for="boxedlayout">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="title">Presentación</div>
+            <div class="setings-item default-skin">
+                    <span class="skin-name ">
+                         <a href="#" class="s-skin-0">
+                             SSAMX
+                         </a>
+                    </span>
+            </div>
+            <div class="setings-item blue-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-1">
+                            Azul
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item blue-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-2">
+                            Azul 2
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item yellow-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-3">
+                               Purpura
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item pink-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-4">
+                            Rojo
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item red-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-5">
+                            Rosa
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item rosa-skin">
+                    <span class="skin-name">
+                        <a href="#" class="s-skin-6">
+                            Rosa Mx
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item negro-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-7">
+                            Negro
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item red-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-8">
+                            Agua
+                        </a>
+                    </span>
+            </div>
+
+            <div class="setings-item red-skin">
+                    <span class="skin-name ">
+                        <a href="#" class="s-skin-10">
+                            Prisma
+                        </a>
+                    </span>
+            </div>
+
+
+
+<!--            
+            <div class="setings-item ultra-skin">
+                    <span class="skin-name ">
+                        <a target="_blank" href="md_skin/" class="md-skin">
+                            Material Design
+                        </a>
+                    </span>
+            </div>
+-->            
+        </div>
+    </div>
+</div>
+<script>
+    // Config box
+
+    // Enable/disable fixed top navbar
+    $('#fixednavbar').click(function () {
+        if ($('#fixednavbar').is(':checked')) {
+            $(".navbar-static-top").removeClass('navbar-static-top').addClass('navbar-fixed-top');
+            $("body").removeClass('boxed-layout');
+            $("body").addClass('fixed-nav');
+            $('#boxedlayout').prop('checked', false);
+
+            if (localStorageSupport) {
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixednavbar",'on');
+            }
+        } else {
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixednavbar",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed sidebar
+    $('#fixedsidebar').click(function () {
+        if ($('#fixedsidebar').is(':checked')) {
+            $("body").addClass('fixed-sidebar');
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9
+            });
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixedsidebar",'on');
+            }
+        } else {
+            $('.sidebar-collapse').slimscroll({destroy: true});
+            $('.sidebar-collapse').attr('style', '');
+            $("body").removeClass('fixed-sidebar');
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixedsidebar",'off');
+            }
+        }
+    });
+
+    // Enable/disable collapse menu
+    $('#collapsemenu').click(function () {
+        if ($('#collapsemenu').is(':checked')) {
+            $("body").addClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport) {
+                localStorage.setItem("collapse_menu",'on');
+            }
+
+        } else {
+            $("body").removeClass('mini-navbar');
+            SmoothlyMenu();
+
+            if (localStorageSupport) {
+                localStorage.setItem("collapse_menu",'off');
+            }
+        }
+    });
+
+    // Enable/disable boxed layout
+    $('#boxedlayout').click(function () {
+        if ($('#boxedlayout').is(':checked')) {
+            $("body").addClass('boxed-layout');
+            cosole.log('agrega boxed-layout');
+
+            $('#fixednavbar').prop('checked', false);
+            $(".navbar-fixed-top").removeClass('navbar-fixed-top').addClass('navbar-static-top');
+            $("body").removeClass('fixed-nav');
+            $(".footer").removeClass('fixed');
+            $('#fixedfooter').prop('checked', false);
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixednavbar",'off');
+            }
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixedfooter",'off');
+            }
+
+
+            if (localStorageSupport) {
+                localStorage.setItem("boxedlayout",'on');
+            }
+        } else {
+            $("body").removeClass('boxed-layout');
+            cosole.log('remueve boxed-layout');
+            if (localStorageSupport) {
+                localStorage.setItem("boxedlayout",'off');
+            }
+        }
+    });
+
+    // Enable/disable fixed footer
+    $('#fixedfooter').click(function () {
+        if ($('#fixedfooter').is(':checked')) {
+            $('#boxedlayout').prop('checked', false);
+            $("body").removeClass('boxed-layout');
+            $(".footer").addClass('fixed');
+
+            if (localStorageSupport) {
+                localStorage.setItem("boxedlayout",'off');
+            }
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixedfooter",'on');
+            }
+        } else {
+            $(".footer").removeClass('fixed');
+
+            if (localStorageSupport) {
+                localStorage.setItem("fixedfooter",'off');
+            }
+        }
+    });
+
+    // SKIN Select
+    $('.spin-icon').click(function () {
+        $(".theme-config-box").toggleClass("show");
+    });
+
+    // Default skin
+    $('.s-skin-0').click(function () {
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+
+        FrmPerfil.append("skin", "defaul");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+        
+
+        //$("#dgrht").removeClass("dgrhtcss");
+        //$("#dgrht").addClass("dgrhtcssdft");
+        
+    });
+
+    // Blue skin
+    $('.s-skin-1').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "blue");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+        $("#tabla_pn").addClass("tabla_pn_ultra");
+
+
+        $("body").addClass("skin-1");
+        
+    });
+
+    // Inspinia ultra skin
+    $('.s-skin-2').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "ultra");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+        $("#tabla_pn").addClass("tabla_pn_ultra");
+
+        $("body").addClass("skin-2");
+        
+    });
+
+    // Yellow skin
+    $('.s-skin-3').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "yellow");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").addClass("tabla_pn_purpura");
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+
+        $("body").addClass("skin-3");
+        $("#dgrht").removeClass("dgrhtcss");
+        $("#dgrht").addClass("dgrhtcss");
+
+    });
+
+
+    $('.s-skin-4').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "rosa");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("body").addClass("skin-4");
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        $("#dgrht").removeClass("dgrhtcssdft");
+        $("#dgrht").addClass("dgrhtcss");
+    });
+
+    $('.s-skin-5').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "rojo");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        $("body").addClass("skin-5");
+        $("#dgrht").removeClass("dgrhtcssdft");
+        $("#dgrht").addClass("dgrhtcss");
+    });
+
+    /** Roza Mx **/
+
+    $('.s-skin-6').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "rosamx");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("body").addClass("skin-6");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        
+        $("#dgrht").removeClass("dgrhtcss");
+        $("#dgrht").addClass("dgrhtcssdft");
+    });
+
+    /** Negro **/
+    $('.s-skin-7').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "negro");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+
+        $("body").removeClass("skin-8");
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        $("body").addClass("skin-7");
+        $("#dgrht").removeClass("dgrhtcssdft");
+        $("#dgrht").addClass("dgrhtcss");
+    });
+
+
+    /** Agua **/
+    $('.s-skin-8').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "agua");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+
+        $("body").removeClass("skin-10");
+
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        $("body").addClass("skin-8");
+        $("#dgrht").removeClass("dgrhtcssdft");
+        $("#dgrht").addClass("dgrhtcss");
+    });
+
+    /** Prisma **/
+    $('.s-skin-10').click(function () {
+
+        var Personalizar = new XMLHttpRequest();
+        var FrmPerfil = new FormData();
+        FrmPerfil.append("skin", "prisma");
+        Personalizar.open("POST", "ptfma_persoaliza_perfil.php", false);
+        Personalizar.send(FrmPerfil);
+        var RespuestaCRUDA=Personalizar.responseText;
+
+
+        $("body").removeClass("skin-1");
+        $("body").removeClass("skin-2");
+        $("body").removeClass("skin-3");
+        $("body").removeClass("skin-4");
+        $("body").removeClass("skin-5");
+        $("body").removeClass("skin-6");
+        $("body").removeClass("skin-7");
+        $("body").removeClass("skin-8");
+
+        $("#tabla_pn").removeClass("tabla_pn_ultra");
+        $("#tabla_pn").removeClass("tabla_pn_purpura");
+
+
+        $("body").addClass("skin-10");
+        $("#dgrht").removeClass("dgrhtcssdft");
+        $("#dgrht").addClass("dgrhtcss");
+    });
+
+
+    if (localStorageSupport) {
+        var collapse = localStorage.getItem("collapse_menu");
+        var fixedsidebar = localStorage.getItem("fixedsidebar");
+        var fixednavbar = localStorage.getItem("fixednavbar");
+        var boxedlayout = localStorage.getItem("boxedlayout");
+        var fixedfooter = localStorage.getItem("fixedfooter");
+
+        if (collapse == 'on') {
+            $('#collapsemenu').prop('checked','checked')
+        }
+        if (fixedsidebar == 'on') {
+            $('#fixedsidebar').prop('checked','checked')
+        }
+        if (fixednavbar == 'on') {
+            $('#fixednavbar').prop('checked','checked')
+        }
+        if (boxedlayout == 'on') {
+            $('#boxedlayout').prop('checked','checked')
+        }
+        if (fixedfooter == 'on') {
+            $('#fixedfooter').prop('checked','checked')
+        }
+    }
+</script>

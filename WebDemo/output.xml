@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.6.4 on linux)" generated="20190104 15:52:18.489" rpa="false">
+<suite id="s1" name="Login Tests" source="/var/www/html/WebDemo/login_tests">
+<suite id="s1-s1" name="Gherkin Login" source="/var/www/html/WebDemo/login_tests/gherkin_login.robot">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser">
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190104 15:52:18.547" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.547" endtime="20190104 15:52:18.548"></status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.543" endtime="20190104 15:52:18.548"></status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.543" endtime="20190104 15:52:18.548"></status>
+</kw>
+<kw name="Close Browser" type="teardown">
+<msg timestamp="20190104 15:52:18.550" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.550" endtime="20190104 15:52:18.550">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.541" endtime="20190104 15:52:18.551" critical="yes">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" starttime="20190104 15:52:18.531" endtime="20190104 15:52:18.551"></status>
+</suite>
+<suite id="s1-s2" name="Invalid Login" source="/var/www/html/WebDemo/login_tests/invalid_login.robot">
+<kw name="Open Browser To Login Page" library="resource" type="setup">
+<kw name="Open Browser">
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190104 15:52:18.560" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.560" endtime="20190104 15:52:18.560"></status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.558" endtime="20190104 15:52:18.560"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" starttime="20190104 15:52:18.561" endtime="20190104 15:52:18.561" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" starttime="20190104 15:52:18.561" endtime="20190104 15:52:18.562" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" starttime="20190104 15:52:18.562" endtime="20190104 15:52:18.562" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" starttime="20190104 15:52:18.563" endtime="20190104 15:52:18.563" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" starttime="20190104 15:52:18.563" endtime="20190104 15:52:18.564" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" starttime="20190104 15:52:18.564" endtime="20190104 15:52:18.564" critical="yes">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<kw name="Close Browser" type="teardown">
+<msg timestamp="20190104 15:52:18.567" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.567" endtime="20190104 15:52:18.567">No keyword with name 'Close Browser' found.</status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" starttime="20190104 15:52:18.552" endtime="20190104 15:52:18.568">Suite setup failed:
+No keyword with name 'Open Browser' found.
+
+Also suite teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</suite>
+<suite id="s1-s3" name="Valid Login" source="/var/www/html/WebDemo/login_tests/valid_login.robot">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser">
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190104 15:52:18.577" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.577" endtime="20190104 15:52:18.577"></status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.575" endtime="20190104 15:52:18.578"></status>
+</kw>
+<kw name="Close Browser" type="teardown">
+<msg timestamp="20190104 15:52:18.580" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20190104 15:52:18.580" endtime="20190104 15:52:18.580">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20190104 15:52:18.575" endtime="20190104 15:52:18.580" critical="yes">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20190104 15:52:18.569" endtime="20190104 15:52:18.581"></status>
+</suite>
+<status status="FAIL" starttime="20190104 15:52:18.491" endtime="20190104 15:52:18.582"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8">Critical Tests</stat>
+<stat pass="0" fail="8">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="8" id="s1" name="Login Tests">Login Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Gherkin Login">Login Tests.Gherkin Login</stat>
+<stat pass="0" fail="6" id="s1-s2" name="Invalid Login">Login Tests.Invalid Login</stat>
+<stat pass="0" fail="1" id="s1-s3" name="Valid Login">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190104 15:52:18.539" level="ERROR">Error in file '/var/www/html/WebDemo/login_tests/resource.robot': Importing test library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/anaconda/anaconda3/bin
+  /home/anaconda/anaconda3/lib/python36.zip
+  /home/anaconda/anaconda3/lib/python3.6
+  /home/anaconda/anaconda3/lib/python3.6/lib-dynload
+  /home/anaconda/anaconda3/lib/python3.6/site-packages</msg>
+<msg timestamp="20190104 15:52:18.556" level="ERROR">Error in file '/var/www/html/WebDemo/login_tests/resource.robot': Importing test library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/anaconda/anaconda3/bin
+  /home/anaconda/anaconda3/lib/python36.zip
+  /home/anaconda/anaconda3/lib/python3.6
+  /home/anaconda/anaconda3/lib/python3.6/lib-dynload
+  /home/anaconda/anaconda3/lib/python3.6/site-packages</msg>
+<msg timestamp="20190104 15:52:18.573" level="ERROR">Error in file '/var/www/html/WebDemo/login_tests/resource.robot': Importing test library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/anaconda/anaconda3/bin
+  /home/anaconda/anaconda3/lib/python36.zip
+  /home/anaconda/anaconda3/lib/python3.6
+  /home/anaconda/anaconda3/lib/python3.6/lib-dynload
+  /home/anaconda/anaconda3/lib/python3.6/site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,3313 @@
+ 	
+		<!DOCTYPE html>
+		<html>
+
+		<head>
+
+		    <meta charset="utf-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		    <title>Secretaria de Salud</title>
+              <script src="../js/jquery-2.1.1.js"></script>
+		    <link href="../css/bootstrap.min.css" rel="stylesheet">
+		    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		    <!-- Toastr style -->
+		    <link href="../css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+		    <!-- Gritter -->
+		    <link href="../js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+
+            <link href="../css/animate.css" rel="stylesheet">
+            <link href="../css/style.css" rel="stylesheet">            
+
+            <link href="../css/plugins/dropzone/basic.css" rel="stylesheet">
+            <link href="../css/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+
+             <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+            <link href="../css/plugins/steps/jquery.steps.css" rel="stylesheet">
+
+
+
+            <script src="../js/bootstrap.min.js"></script>
+
+             <script src="../js/bootstrapValidator.min.js"></script>
+            <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+            <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+        <!-- Data picker -->
+        <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+        <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+        
+        <link href="../css/plugins/select2/select2.min.css" rel="stylesheet">
+        
+        <link href="../css/input-foto.css" rel="stylesheet">
+        <link href="../css/animate.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">            
+
+<!--Confirm -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+
+<!--Datepicker -->
+    <script src="../js/plugins/datapicker/bootstrap-datepicker-spanish.js"></script>
+    
+     <!-- iCheck -->
+    <script src="../js/plugins/iCheck/icheck.min.js"></script>
+ 
+    
+    <!-- Select2 -->
+    <script src="../js/plugins/select2/select2.full.min.js"></script>
+    
+    
+    <script src="../js/tabs.js"></script>
+
+
+
+
+
+            <style type="text/css">
+            /*boton arriba*/
+            .ir-arriba{
+              display: none;
+              padding: 20px;
+              cursor: pointer;
+              position: fixed;
+              bottom: 0;
+              right: 0;
+            }
+
+
+            </style>
+
+
+                <style>
+
+        .wizard > .content > .body { position: relative; }
+
+    </style>
+
+
+
+<script>
+//Boton arriba
+$(document).ready(function(){
+
+var Noe;
+
+  $('.ir-arriba').click(function(){
+    $('body, html').animate({
+      scrollTop: '0px'
+    }, 1000);
+  });
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 0 ){
+        $('.ir-arriba').slideDown(300);
+    }else {
+        $('.ir-arriba').slideUp(300);
+    };
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+//Fin boton arriba
+
+
+
+</script>
+
+
+ <script>
+        $(document).ready(function(){
+       });
+    </script>
+
+
+<!-- ace styles -->
+        <link rel="stylesheet" href="../css/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+
+
+<style>
+    /* message box */
+    .message-box {
+      display: none;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+    }
+    .message-box.open {
+      display: block;
+    }
+    .message-box .mb-container {
+      position: absolute;
+      left: 0px;
+      top: 35%;
+      background: #18a689;
+      opacity:0.8;
+      padding: 20px;
+      width: 100%;
+    }
+    .message-box .mb-container .mb-middle {
+      width: 50%;
+      left: 25%;
+      position: relative;
+      color: #FFF;
+    }
+    .message-box .mb-container .mb-middle .mb-title {
+      width: 100%;
+      float: left;
+      padding: 10px 0px 0px;
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+    .message-box .mb-container .mb-middle .mb-title .fa,
+    .message-box .mb-container .mb-middle .mb-title .glyphicon {
+      font-size: 38px;
+      float: left;
+      margin-right: 10px;
+    }
+    .message-box .mb-container .mb-middle .mb-content {
+      width: 100%;
+      float: left;
+      padding: 10px 0px 0px;
+    }
+    .message-box .mb-container .mb-middle .mb-content p {
+      margin-bottom: 0px;
+    }
+    .message-box .mb-container .mb-middle .mb-footer {
+      width: 100%;
+      float: left;
+      padding: 10px 0px;
+    }
+    .message-box.message-box-warning .mb-container {
+      background: rgba(254, 162, 35, 0.9);
+    }
+    .message-box.message-box-danger .mb-container {
+      background: rgba(182, 70, 69, 0.9);
+    }
+    .message-box.message-box-info .mb-container {
+      background: rgba(63, 186, 228, 0.9);
+    }
+    .message-box.message-box-success .mb-container {
+      background: rgba(149, 183, 93, 0.9);
+    }
+    /* end message box */
+    </style>
+
+<style>
+    @media screen and (max-width: 600px){
+      .message-box .mb-container {
+        top: 22%;
+      }
+      .message-box .mb-container .mb-middle .mb-title {
+        float: left;
+        padding: 10px 0px 0px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 36px;
+        width:160%;
+      }
+    }
+    </style>
+
+<link href="../../css/default-black.css" rel="stylesheet">
+
+
+		</head>
+
+<body>
+
+
+<audio id="audio-alert" src="../../audio/alert.mpeg" preload="auto"></audio>
+  <audio id="audio-fail"  src="../../audio/fail.mpeg"  preload="auto"></audio>
+    <!-- END PRELOADS -->
+
+
+
+<!-- MESSAGE BOX-->
+      <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+          <div class="mb-middle">
+            <div class="mb-title"><span class="fa fa-sign-out"></span> ¿<strong>Cerrar sesión</strong> ?</div>
+            <div class="mb-content">
+              <p>¿Seguro que quieres salir?</p>                    
+              <p>Pulse 'No' si desea continuar trabajando. Pulse 'Sí' para salir del usuario actual.</p>
+            </div>
+            <div class="mb-footer">
+              <div class="pull-right">
+                <a href="#" id="btn-logout" class="btn btn-primary" style="background-color: white;border-color: white;color: black;">Sí</a>
+                <button class="btn btn-default mb-control-close" style="background-color: white;border-color: white;color: black;">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- END MESSAGE BOX-->
+
+
+
+
+
+
+<table align="center" height="60" style="width: 100%">
+  <tr>
+     <td width="40%" align="left"><img src="../images/logoSALUD_hoz.png" width="289" height="95" /></td>
+     <!--<td width="420" align="left">
+     <img src="../images/70Salud.jpg" width="375" height="91" /></td>-->
+     <!--<td width="683" align="right">
+     <div id="dominio">Recepción Art. 74</div>
+
+     
+     </td>  -->  
+     <td width="60%" align="right">
+             <div class="col-lg-11">
+                    <h2> Dirección General de Recursos Humanos Y Organización
+                    
+                    </h2>
+        </div>
+
+     
+     </td>    
+  </tr>
+</table> 
+
+
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation"   style="
+       margin-top: 10px;">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu " id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" 
+                            src="../images/manager.png"  style="  width: 75px;"/>
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> 
+                            <strong class="font-bold text-muted">Usuario de Consulta</strong>
+                             </span> <span class="text-muted text-xs block">
+                             Responsable <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">Perfil</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span> Salir</a> 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            Salud
+                        </div>
+                    </li>
+
+
+
+                <li>
+                <!-- expediente electronico consulta escritorio -->
+                       <a id="eece" href="ee_consulta.php?tipo=eec&origen=" 
+                                class="btn btn-w-m btn-outline btn-default ">
+                        <i class="fa  fa-desktop fa-2x pull-left"></i>
+                        <span class="nav-label">Escritorio</span>
+                        </a>
+
+                </li>                    
+                <li class="divider"></li>
+                <li>
+                <!-- expediente electronico consulta buscar -->
+
+                                       <a id="eecb" href="#" 
+                                                class="btn btn-w-m btn-outline btn-default ">
+                                        <i class="fa  fa-search fa-2x pull-left"></i>
+                                        <span class="nav-label "> Buscar </span>
+                                        </a>
+
+                </li>
+<li class="divider"></li>
+<li>
+
+                       <a id="ee-estadisticas" href="#" 
+                                class="btn btn-w-m btn-outline btn-default ">
+                        <i class="fa fa-bar-chart  fa-2x pull-left"></i>
+                        <span class="nav-label "> Estadisticas </span>
+                        </a>
+
+</li>
+
+
+
+
+
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+        
+<div style="clear: both;width: 100%;border-top: 6px solid #BBBBBB;margin-bottom: 0px;height: 10.25px;"></div>
+
+
+	<div id="page-wrapper" class="gray-bg dashbard-1">
+
+
+<div class="header-x pull-right">                                        
+                    <div class="s-search">
+                        <div class="ss-trigger"><i class="icon-search2"></i></div>
+                        <div class="ss-content" style="overflow-y: initial !important">
+                            <span class="ss-close fa fa-close icon-cross2" style="color:#f5f5f5"></span>
+                            <div class="ssc-inner">
+                                <form name="formSearch">
+                                    <div class="form-group">
+                                        <input type="text" id="searchBlock" placeholder="Buscar Aquí..." class="form-control text-uppercase" autofocus>
+                                        <button type="submit" id="changeSearch"><i class="fa fa-search icon-search2"></i></button>
+                                    </div>
+                                </form>
+                                <br>                                                    
+                            </div>
+                            <div id="resultsInput"> </div>
+                        </div>
+                    </div>
+                </div>
+
+<script>
+    
+$('#searchBlock').focus();
+console.log('movi_escritorio/searchBlock/focus');
+
+</script>                
+
+
+
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation"  style="margin-bottom: 0px;">
+
+            <div class="navbar-header">
+
+                <div class="col-lg-12">
+                    
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">513</a>
+                        </li>
+                        <li>
+                            <a href="#">  </a>
+                        </li>
+                        <li class="active">
+                            <strong>Escritorio Virtual </strong>
+                        </li>
+                    </ol>
+                </div>
+
+
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <h3>
+                    Modulo de Consulta de Expediente Electrónico
+                    </h3>
+                    
+                </li>
+                </li>
+
+
+                <li>
+
+<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span> Salir</a> 
+
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+
+
+
+
+        
+
+<!-- Inicia escritorio -->
+
+
+
+    <div class="row wrapper border-bottom white-bg page-heading">
+
+     </div>
+
+   <div class="wrapper wrapper-content animated fadeInRight" id="main_page" style="
+    padding-top: 0px;">
+    <div class="row" style="  padding-left: 0px;">
+
+
+
+
+
+
+                <div class="col-lg-12" style="  padding-left: 0px;\>
+                    <div class="ibox">
+                        <div class="ibox-title">
+                        <h5>13 de  Julio  del 2018  &nbsp;&nbsp;&nbsp; </h5>
+                            <h5></h5>
+                            <div class="ibox-tools">
+                                <a href="" class="btn btn-primary btn-xs"></a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <div class="m-b-lg">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Teclee nombre ..." 
+                                    class=" form-control">
+
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-white">
+                            <i class="fa  fa-search pull-left"></i>
+                                        Buscar</button>
+
+                                   </span>
+                                </div>
+                                <div class="m-t-md">
+
+
+                                    <strong> 61 Movimientos</strong>
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+    <div id="user-profile-2" class="user-profile">
+        <div class="tabbable">
+            <ul class="nav nav-tabs padding-18">
+                <li class="active">
+                    <a data-toggle="tab" href="#home">
+                        <i class="green ace-icon fa fa-user bigger-200"></i>
+                        Recibidos
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#feed">
+                        <i class="green ace-icon fa fa-check bigger-220"></i>
+                        Aprobados
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#friends">
+                        <i class="blue  fa fa-clock-o bigger-200"></i>
+                        Pendientes
+                    </a>
+                </li>
+
+                <li>
+                    <a data-toggle="tab" href="#pictures">
+                        <i class="orange ace-icon fa fa-exclamation-triangle bigger-200"></i>
+                        Rechazados
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content no-border padding-24">
+
+
+
+
+                <div id="home" class="tab-pane in active">
+
+                        
+
+
+
+                            <div class="table-responsive" id="tabla-movimietnos">
+                            <table class="table table-hover issue-tracker">
+                                <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc1">
+                                            4001 - Alta A Personal De Base
+                                        </a>
+
+                                        <small>
+                                           SOPORTE ADMINISTRATIVO C/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+
+                                    <td>
+                                        Juan Lopez Arellano
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" id="ifomope" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" id="ival" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#"  id="href-rfc2">
+                                            4002 - Alta A Personal De Confianza
+                                        </a>
+
+                                        <small>
+                                           APOYO ADMINISTRATIVO EN SALUD A8/ DIRECCION GENERAL DE COMUNICACION SOCIAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Mendoza Ramirez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" id="ifomope" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" id="ival2"  class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc3">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                             DEPARTAMENTO PARA LA ATENCION PREHOSPITALARIA DE LOS ACCIDENTES/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carlos Eduardo Avila Vilchiz
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#"  class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc1">
+                                          4004 - Alta A Personal Interino 
+                                        </a>
+
+                                        <small>
+                                             SOPORTE ADMINISTRATIVO C/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+
+                                    <td>
+                                        Juan Lopez Arellano
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#"  id="href-rfc2">
+                                           4005 - Alta A Personal Eventual  
+                                        </a>
+
+                                        <small>
+                                             APOYO ADMINISTRATIVO EN SALUD A8/ DIRECCION GENERAL DE COMUNICACION SOCIAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Mendoza Ramirez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc3">
+                                           4006 - Alta A Contrato De Honorarios 
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO PARA LA ATENCION PREHOSPITALARIA DE LOS ACCIDENTES/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carlos Eduardo Avila Vilchiz
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc4">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación
+                                        </a>
+
+                                        <small>
+                                             COORDINACION ADMINISTRATIVA/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Contreras Romero
+                                    </td>
+                                    <td>
+                                        01.10.2015 11:02 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span id="pend-item"class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                          5602 - Alta En Sistema Por Promoción O Descenso     
+                                        </a>
+
+                                        <small>
+                                            SOPORTE ADMINISTRATIVO A/ CENTRO NACIONAL PARA LA PREVENCION DE ACCIDENTES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Hernández López
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+
+
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                          5604 - Alta En Sistema Por Promoción O Descenso Escalafonario  
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE LEGISLACION/ COMISION NACIONAL CONTRA LAS ADICCIONES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Garcia Zepeda
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                            4001 - Alta A Personal De Base  
+                                        </a>
+
+                                        <small>
+                                            CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carolina Segundo Apolina
+                                    </td>
+                                    <td>
+                                        11.03.2015 07:30 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4002 - Alta A Personal De Confianza 
+                                        </a>
+
+                                        <small>
+                                            SOPORTE ADMINISTRATIVO A/ CENTRO NACIONAL PARA LA PREVENCION DE ACCIDENTES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Hernández López
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional   
+                                        </a>
+
+                                        <small>
+                                             DEPARTAMENTO DE LEGISLACION/ COMISION NACIONAL CONTRA LAS ADICCIONES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Garcia Zepeda
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4004 - Alta A Personal Interino
+                                        </a>
+
+                                        <small>
+                                             CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carolina Segundo Apolina
+                                    </td>
+                                    <td>
+                                        11.03.2015 07:30 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación
+                                        </a>
+
+                                        <small>
+                                             DIRECCION DE DERECHOS HUMANOS E INVESTIGACION NORMATIVA EN SALUD/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carmen Cruz Hernandez
+                                    </td>
+                                    <td>
+                                        05.04.2015 08:40 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                        4006 - Alta A Contrato De Honorarios
+                                            
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE APOYO A LA INVESTIGACION/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Mendoza Sanchez
+                                    </td>
+                                    <td>
+                                        10.06.2014 08:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4001 - Alta A Personal De Base   
+                                        </a>
+
+                                        <small>
+                                             SOPORTE ADMINISTRATIVO C/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Paola Romero Maldonado
+                                    </td>
+                                    <td>
+                                        13.05.2014 09:20 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                            PARAMEDICO EN AREA NORMATIVA/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Adrian Dominguez Lopez
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                            4008 - Alta A Personal De Recursos Humanos En Formación 
+                                        </a>
+
+                                        <small>
+                                            APOYO ADMINISTRATIVO EN SALUD A5/ SUBSECRETARIA DE PREVENCION Y PROMOCION DE LA SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Aaaron Cruz Hernandez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                        4003 - Alta A Personal Provisional
+                                            
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE CONTROL DE INFORMACION DE PROYECTOS/ DIRECCION GENERAL DE PROMOCION DE LA SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Antonio Santana Salviter
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4001 - Alta A Personal De Base   
+                                        </a>
+
+                                        <small>
+                                             COORDINACION ADMINISTRATIVA DE LA UNIDAD DE ANALISIS ECONOMICO/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD MENTAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Cruz Cruz
+                                    </td>
+                                    <td>
+                                        01.10.2015 11:02 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                             SUBDIRECCION DE CUADRO BASICO Y CATALOGO DE INSTRUMENTAL Y EQUIPO AUXILIARES DE DIAGNOSTICO Y MATERI/ SUBSECRETARIA DE ADMINISTRACION Y FINANZAS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Alvarez Longinos
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación   
+                                        </a>
+
+                                        <small>
+                                            SUBDIRECCION DE RECURSOS ADMINISTRATIVOS/ DIRECCION GENERAL DE RECURSOS MATERIALES Y SERVICIOS GENERALES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Villegas Olalde
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            </div> 
+
+
+
+                    <div class="space-20"></div>
+
+                    <div class="row">
+
+                    </div>
+                </div><!-- /#home -->
+
+                <div id="feed" class="tab-pane">
+                    <div class="profile-feed row">
+                        
+                            <div class="table-responsive" id="tabla-movimietnos">
+                            <table class="table table-hover issue-tracker">
+                                <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc1">
+                                            4001 - Alta A Personal De Base
+                                        </a>
+
+                                        <small>
+                                           SOPORTE ADMINISTRATIVO C/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+
+                                    <td>
+                                        Juan Lopez Arellano
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#"  id="href-rfc2">
+                                            4002 - Alta A Personal De Confianza
+                                        </a>
+
+                                        <small>
+                                           APOYO ADMINISTRATIVO EN SALUD A8/ DIRECCION GENERAL DE COMUNICACION SOCIAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Mendoza Ramirez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc3">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                             DEPARTAMENTO PARA LA ATENCION PREHOSPITALARIA DE LOS ACCIDENTES/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carlos Eduardo Avila Vilchiz
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+
+                                
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc1">
+                                          4004 - Alta A Personal Interino 
+                                        </a>
+
+                                        <small>
+                                             SOPORTE ADMINISTRATIVO C/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+
+                                    <td>
+                                        Juan Lopez Arellano
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#"  id="href-rfc2">
+                                           4005 - Alta A Personal Eventual  
+                                        </a>
+
+                                        <small>
+                                             APOYO ADMINISTRATIVO EN SALUD A8/ DIRECCION GENERAL DE COMUNICACION SOCIAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Mendoza Ramirez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc3">
+                                           4006 - Alta A Contrato De Honorarios 
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO PARA LA ATENCION PREHOSPITALARIA DE LOS ACCIDENTES/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carlos Eduardo Avila Vilchiz
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-success arrowed" style="font-size:15px" >Aprobado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#" id="href-rfc4">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación
+                                        </a>
+
+                                        <small>
+                                             COORDINACION ADMINISTRATIVA/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Contreras Romero
+                                    </td>
+                                    <td>
+                                        01.10.2015 11:02 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline  btn-success" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+
+
+
+                                </tbody>
+                            </table>
+
+                            </div>
+                            
+
+
+                    </div><!-- /.row -->
+
+                
+                </div><!-- /#feed -->
+
+                <div id="friends" class="tab-pane">
+
+
+
+
+ <div class="table-responsive" id="tabla-movimietnos">
+                            <table class="table table-hover issue-tracker">
+                                <tbody>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                          5602 - Alta En Sistema Por Promoción O Descenso     
+                                        </a>
+
+                                        <small>
+                                            SOPORTE ADMINISTRATIVO A/ CENTRO NACIONAL PARA LA PREVENCION DE ACCIDENTES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Hernández López
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+
+
+                                    <td>
+                                       
+                                       <a href="#"  class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" id="ipen" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                          5604 - Alta En Sistema Por Promoción O Descenso Escalafonario  
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE LEGISLACION/ COMISION NACIONAL CONTRA LAS ADICCIONES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Garcia Zepeda
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                            4001 - Alta A Personal De Base  
+                                        </a>
+
+                                        <small>
+                                            CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carolina Segundo Apolina
+                                    </td>
+                                    <td>
+                                        11.03.2015 07:30 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4002 - Alta A Personal De Confianza 
+                                        </a>
+
+                                        <small>
+                                            SOPORTE ADMINISTRATIVO A/ CENTRO NACIONAL PARA LA PREVENCION DE ACCIDENTES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Hernández López
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional   
+                                        </a>
+
+                                        <small>
+                                             DEPARTAMENTO DE LEGISLACION/ COMISION NACIONAL CONTRA LAS ADICCIONES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Garcia Zepeda
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4004 - Alta A Personal Interino
+                                        </a>
+
+                                        <small>
+                                             CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carolina Segundo Apolina
+                                    </td>
+                                    <td>
+                                        11.03.2015 07:30 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación
+                                        </a>
+
+                                        <small>
+                                             DIRECCION DE DERECHOS HUMANOS E INVESTIGACION NORMATIVA EN SALUD/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Carmen Cruz Hernandez
+                                    </td>
+                                    <td>
+                                        05.04.2015 08:40 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                        4006 - Alta A Contrato De Honorarios
+                                            
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE APOYO A LA INVESTIGACION/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Mendoza Sanchez
+                                    </td>
+                                    <td>
+                                        10.06.2014 08:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-warning">Pendiente</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4001 - Alta A Personal De Base   
+                                        </a>
+
+                                        <small>
+                                             SOPORTE ADMINISTRATIVO C/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Anna Paola Romero Maldonado
+                                    </td>
+                                    <td>
+                                        13.05.2014 09:20 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-warning" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            </div>
+
+
+                    <div class="profile-users clearfix">
+                        <div class="itemdiv memberdiv">
+                            
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                </div><!-- /#friends -->
+
+                <div id="pictures" class="tab-pane">
+
+                            <div class="table-responsive" id="tabla-movimietnos">
+                            <table class="table table-hover issue-tracker">
+                                <tbody>
+
+
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                            PARAMEDICO EN AREA NORMATIVA/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Adrian Dominguez Lopez
+                                    </td>
+                                    <td>
+                                        12.02.2015 10:00 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" id="irech" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                            4008 - Alta A Personal De Recursos Humanos En Formación 
+                                        </a>
+
+                                        <small>
+                                            APOYO ADMINISTRATIVO EN SALUD A5/ SUBSECRETARIA DE PREVENCION Y PROMOCION DE LA SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Aaaron Cruz Hernandez
+                                    </td>
+                                    <td>
+                                        10.02.2015 05:32 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                        4003 - Alta A Personal Provisional
+                                            
+                                        </a>
+
+                                        <small>
+                                            DEPARTAMENTO DE CONTROL DE INFORMACION DE PROYECTOS/ DIRECCION GENERAL DE PROMOCION DE LA SALUD
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Antonio Santana Salviter
+                                    </td>
+                                    <td>
+                                        02.03.2015 06:02 am
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4001 - Alta A Personal De Base   
+                                        </a>
+
+                                        <small>
+                                             COORDINACION ADMINISTRATIVA DE LA UNIDAD DE ANALISIS ECONOMICO/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD MENTAL
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Monica Cruz Cruz
+                                    </td>
+                                    <td>
+                                        01.10.2015 11:02 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4003 - Alta A Personal Provisional
+                                        </a>
+
+                                        <small>
+                                             SUBDIRECCION DE CUADRO BASICO Y CATALOGO DE INSTRUMENTAL Y EQUIPO AUXILIARES DE DIAGNOSTICO Y MATERI/ SUBSECRETARIA DE ADMINISTRACION Y FINANZAS
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Alejandro Alvarez Longinos
+                                    </td>
+                                    <td>
+                                        28.11.2015 05:10 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="label label-danger">Rechazado</span>
+                                    </td>
+                                    <td class="issue-info">
+                                        <a href="#">
+                                           4008 - Alta A Personal De Recursos Humanos En Formación   
+                                        </a>
+
+                                        <small>
+                                            SUBDIRECCION DE RECURSOS ADMINISTRATIVOS/ DIRECCION GENERAL DE RECURSOS MATERIALES Y SERVICIOS GENERALES
+                                        </small>
+                                    </td>
+                                    <td>
+                                        Marco Antonio Villegas Olalde
+                                    </td>
+                                    <td>
+                                        18.09.2015 06:20 pm
+                                    </td>
+                                    <td>
+                                       
+                                       <a href="#" class="disabled btn btn-app btn-outline  btn-default" >
+                                       <i class="fa fa-print fa-2x"></i>  </a>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <a href="#" class="btn btn-app btn-outline btn-danger" >
+                                       <i class="fa fa-info-circle fa-2x"></i>  </a>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            </div>
+
+
+
+
+                </div><!-- /#pictures -->
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>                     
+          </div>	
+
+
+
+ <!-- Fin de escritorio -->           
+
+
+<div class="ir-arriba" style="display: block;"><img src="../images/arrows.png"></div>
+
+
+
+
+
+
+
+
+
+							
+    <div class="spiner-example modal inmodal" id="myModal4" tabindex="-1" 
+    role="dialog" aria-hidden="true" style="display:none; position: absolute;">
+<br>
+      <br>
+      <br>
+
+      <div class="sk-spinner sk-spinner-fading-circle">
+
+                         <div class="sk-circle1 sk-circle " 
+                                style="width: 300%;height: 300%;"></div>
+
+                            <div class="sk-circle2 sk-circle " 
+                                style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle3 sk-circle " 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle4 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle5 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle6 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle7 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle8 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle9 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle10 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle11 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+                            <div class="sk-circle12 sk-circle" 
+                            style="width: 300%;height: 300%;"></div>
+        </div>
+    </div>
+                
+
+			
+   <!-- Mainly scripts -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="../js/plugins/flot/jquery.flot.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="../js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity  
+    <script src="../js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="../js/demo/peity-demo.js"></script>
+
+    -->
+
+    <!-- Custom and plugin javascript  -->
+    <script src="../js/inspinia.js"></script>
+    <script src="../js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="../js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="../js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    
+
+    <!-- Sparkline demo data
+    <script src="../js/demo/sparkline-demo.js"></script>
+  -->
+
+    <!-- ChartJS-->
+    <script src="../js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="../js/plugins/toastr/toastr.min.js"></script>
+
+     <!-- DROPZONE -->
+
+<!--     
+    <script src="../js/plugins/dropzone/dropzone.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  -->  
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script> 
+
+    <script>
+        $(document).ready(function() {
+
+
+/**
+            $("#wizard").steps();
+            $("#form").steps({
+                bodyTag: "fieldset",
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    // Always allow going backward even if the current step contains invalid fields!
+                    if (currentIndex > newIndex)
+                    {
+                        return true;
+                    }
+
+                    // Forbid suppressing "Warning" step if the user is to young
+                    if (newIndex === 3 && Number($("#age").val()) < 18)
+                    {
+                        return false;
+                    }
+
+                    var form = $(this);
+
+                    // Clean up if user went backward before
+                    if (currentIndex < newIndex)
+                    {
+                        // To remove error styles
+                        $(".body:eq(" + newIndex + ") label.error", form).remove();
+                        $(".body:eq(" + newIndex + ") .error", form).removeClass("error");
+                    }
+
+                    // Disable validation on fields that are disabled or hidden.
+                    form.validate().settings.ignore = ":disabled,:hidden";
+
+                    // Start validation; Prevent going forward if false
+                    return form.valid();
+                },
+                onStepChanged: function (event, currentIndex, priorIndex)
+                {
+                    // Suppress (skip) "Warning" step if the user is old enough.
+                    if (currentIndex === 2 && Number($("#age").val()) >= 18)
+                    {
+                        $(this).steps("next");
+                    }
+
+                    // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+                    if (currentIndex === 2 && priorIndex === 3)
+                    {
+                        $(this).steps("previous");
+                    }
+                },
+                onFinishing: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Disable validation on fields that are disabled.
+                    // At this point it's recommended to do an overall check (mean ignoring only disabled fields)
+                    form.validate().settings.ignore = ":disabled";
+
+                    // Start validation; Prevent form submission if false
+                    return form.valid();
+                },
+                onFinished: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Submit form input
+                    form.submit();
+                }
+            }).validate({
+                        errorPlacement: function (error, element)
+                        {
+                            element.before(error);
+                        },
+                        rules: {
+                            confirm: {
+                                equalTo: "#password"
+                            }
+                        }
+                    });
+
+
+**/
+
+
+
+
+
+
+
+
+            
+
+            var data1 = [
+                [0,4],[1,8],[2,5],[3,10],[4,4],[5,16],[6,5],[7,11],[8,6],[9,11],[10,30],[11,10],[12,13],[13,4],[14,3],[15,3],[16,6]
+            ];
+            var data2 = [
+                [0,1],[1,0],[2,2],[3,0],[4,1],[5,3],[6,1],[7,5],[8,2],[9,3],[10,2],[11,1],[12,0],[13,2],[14,8],[15,0],[16,0]
+            ];
+            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+                data1, data2
+            ],
+                    {
+                        series: {
+                            lines: {
+                                show: false,
+                                fill: true
+                            },
+                            splines: {
+                                show: true,
+                                tension: 0.4,
+                                lineWidth: 1,
+                                fill: 0.4
+                            },
+                            points: {
+                                radius: 0,
+                                show: true
+                            },
+                            shadowSize: 2
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: true,
+                            tickColor: "#d5d5d5",
+                            borderWidth: 1,
+                            color: '#d5d5d5'
+                        },
+                        colors: ["#1ab394", "#1C84C6"],
+                        xaxis:{
+                        },
+                        yaxis: {
+                            ticks: 4
+                        },
+                        tooltip: false
+                    }
+            );
+
+            var doughnutData = [
+                {
+                    value: 300,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "App"
+                },
+                {
+                    value: 50,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "Software"
+                },
+                {
+                    value: 100,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "Laptop"
+                }
+            ];
+
+            var doughnutOptions = {
+                segmentShowStroke: true,
+                segmentStrokeColor: "#fff",
+                segmentStrokeWidth: 2,
+                percentageInnerCutout: 45, // This is 0 for Pie charts
+                animationSteps: 100,
+                animationEasing: "easeOutBounce",
+                animateRotate: true,
+                animateScale: false
+            };
+
+//            var ctx = document.getElementById("doughnutChart").getContext("2d");
+//            var DoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
+
+            var polarData = [
+                {
+                    value: 300,
+                    color: "#a3e1d4",
+                    highlight: "#1ab394",
+                    label: "App"
+                },
+                {
+                    value: 140,
+                    color: "#dedede",
+                    highlight: "#1ab394",
+                    label: "Software"
+                },
+                {
+                    value: 200,
+                    color: "#A4CEE8",
+                    highlight: "#1ab394",
+                    label: "Laptop"
+                }
+            ];
+
+            var polarOptions = {
+                scaleShowLabelBackdrop: true,
+                scaleBackdropColor: "rgba(255,255,255,0.75)",
+                scaleBeginAtZero: true,
+                scaleBackdropPaddingY: 1,
+                scaleBackdropPaddingX: 1,
+                scaleShowLine: true,
+                segmentShowStroke: true,
+                segmentStrokeColor: "#fff",
+                segmentStrokeWidth: 2,
+                animationSteps: 100,
+                animationEasing: "easeOutBounce",
+                animateRotate: true,
+                animateScale: false
+            };
+           // var ctx = document.getElementById("polarChart").getContext("2d");
+           // var Polarchart = new Chart(ctx).PolarArea(polarData, polarOptions);
+
+        });
+
+    </script>
+
+<script>
+
+
+
+
+</script>
+
+
+<script>
+
+$("body").click(function(e){
+ // alert('>' + e.target.id + '<  >' + e.target.type +'<');
+  //  alert(document.querySelector('#cargaotravez'));
+
+  if ((e.target.id==="cargaotravez" )|| (e.target.id==="cargaotravezicon")||(e.target.id==="cargaotravezspan"))
+   {
+       // alert('a cargar otra vez ');
+        //$('#x00').load("../ptfma_dropzone.php");
+        //window.open("ptma_opcd.php");
+        window.location.href = "ptma_opcd.php";
+   }  
+   
+}); // 
+
+
+
+
+
+</script>
+
+	
+
+<!-- ace scripts -->
+        <script src="../css/assets/js/ace-elements.min.js"></script>
+        <script src="../css/assets/js/ace.min.js"></script>
+
+
+
+<script>
+    /* MESSAGE BOX */
+      $(".mb-control").on("click",function(){
+
+        var Ctrl = event.target.id;
+
+        console.log('mb-control');
+        console.log('Ctrl >'+Ctrl +'<');
+
+        //var box = $($(this).data("box"));
+        var box = $('#mb-signout');
+
+        console.log('box >'+box +'<');
+        console.log('box.length >'+box.length +'<');
+        if(box.length > 0){
+          box.toggleClass("open");
+          
+          var sound = box.data("sound");
+          
+          if(sound === 'alert')
+            playAudio('alert');
+          
+          if(sound === 'fail')
+            playAudio('fail');
+          
+        }        
+        return false;
+      });
+
+
+      $(".mb-control-close").on("click",function(){
+         $(this).parents(".message-box").removeClass("open");
+         return false;
+      });    
+    /* END MESSAGE BOX */
+    /* PLAY SOUND FUNCTION */
+      function playAudio(file){
+        if(file === 'alert')
+          document.getElementById('audio-alert').play();
+
+        if(file === 'fail')
+          document.getElementById('audio-fail').play();    
+      }
+    /* END PLAY SOUND FUNCTION */
+  </script>
+  
+
+
+
+
+
+<script>
+
+
+     $('#ifomope').click(function(){
+
+            $.confirm({
+                icon: 'fa fa-check-circle fa-2x fa-fw',
+    title: 'Impresion de FOMOPE',
+    content: '¿Desea Imprimir el FOMOPE?',
+    type: 'green',
+    buttons: {
+        Aceptar: function () {
+            //location.href = '';
+
+             window.open('http://10.1.247.45/demof/Static_Full_Version/FileUpload/Digitalizacion.pdf','_blank');
+
+        },
+        cancelar: function () {
+            console.log('Cancelo Impresion');
+        }
+    }
+});
+
+
+        });
+
+
+
+
+
+     $('#ival2').click(function(){
+
+            //alert ('Estatus de la Validacion');
+
+            var contenido=
+'<div class="timeline-items">' +
+'                                                   <div class="timeline-item clearfix">' +
+'                                                       <div class="timeline-info">' +
+'                                                           <i class="timeline-indicator ace-icon fa fa-clock-o btn btn-success no-hover"></i>' +
+'                                                           <span class="label label-info label-sm"></span>' +
+'                                                       </div>' +
+'' +
+'                                                       <div class="widget-box transparent collapsed">' +
+'                                                           <div class="widget-header widget-header-small">' +
+'                                                               <h5 class="widget-title smaller">' +
+'                                                                   <a href="#" class="blue">SPC</a>' +
+'                                                                   <span class="grey"></span>' +
+'                                                               </h5>' +
+'' +
+'                                                               <span class="widget-toolbar no-border">' +
+'                                                                   <i class="ace-icon fa fa-clock-o bigger-110"></i>' +
+'                                                                   13:45' +
+'                                                               </span>' +
+'' +
+'                                                               <span class="widget-toolbar">' +
+'                                                                   <a href="#" data-action="reload">' +
+'                                                                       <i class="ace-icon fa fa-refresh"></i>' +
+'                                                                   </a>' +
+'' +
+'                                                                   <a href="#" data-action="collapse">' +
+'                                                                       <i class="ace-icon fa fa-chevron-down"></i>' +
+'                                                                   </a>' +
+'                                                               </span>' +
+'                                                           </div>' +
+'' +
+'                                                           <div class="widget-body">' +
+'                                                               <div class="widget-main">' +
+'                                                                   Verificado por el Servicio Profesional de Carrera' +
+'                                                                   <div class="space-6"></div>' +
+'' +
+'                                                                   <div class="widget-toolbox clearfix">' +
+'                                                                       <div class="pull-left">' +
+
+'                                                                       </div>' +
+'' +
+'                                                                       <div class="pull-right action-buttons">' +
+'                                                                       </div>' +
+'                                                                   </div>' +
+'                                                               </div>' +
+'                                                           </div>' +
+'                                                       </div>' +
+'                                                   </div>' +
+'' +
+'                                                   <div class="timeline-item clearfix">' +
+'                                                       <div class="timeline-info">' +
+'                                                           <i class="timeline-indicator ace-icon fa fa-clock-o btn btn-success no-hover"></i>' +
+'                                                       </div>' +
+'' +
+'                                                       <div class="widget-box transparent ">' +
+'                                                           <div class="widget-body">' +
+'                                                               <div class="widget-main">' +
+'                                                                   Verificado por Direccionde Personal' +
+'                                                                   <div class="pull-right">' +
+'                                                                       <i class="ace-icon fa fa-clock-o bigger-110"></i>' +
+'                                                                       10:30' +
+'                                                                   </div>' +
+'                                                               </div>' +
+'                                                           </div>' +
+'                                                       </div>' +
+'                                                   </div>' +
+'' +
+'                                                   <div class="timeline-item clearfix">' +
+'                                                       <div class="timeline-info">' +
+'                                                           <i class="timeline-indicator ace-icon fa fa-star btn btn-success no-hover green"></i>' +
+'                                                       </div>' +
+'' +
+'                                                       <div class="widget-box transparent collapsed">' +
+'                                                           <div class="widget-header widget-header-small">' +
+'                                                               <h5 class="widget-title smaller">UR Administración</h5>' +
+'' +
+'                                                               <span class="widget-toolbar no-border">' +
+'                                                                   <i class="ace-icon fa fa-clock-o bigger-110"></i>' +
+'                                                                   10:15' +
+'                                                               </span>' +
+'' +
+'                                                               <span class="widget-toolbar">' +
+'                                                                   <a href="#" data-action="reload">' +
+'                                                                       <i class="ace-icon fa fa-refresh"></i>' +
+'                                                                   </a>' +
+'' +
+'                                                                   <a href="#" data-action="collapse">' +
+'                                                                       <i class="ace-icon fa fa-chevron-down"></i>' +
+'                                                                   </a>' +
+'                                                               </span>' +
+'                                                           </div>' +
+'' +
+'                                                           <div class="widget-body">' +
+'                                                               <div class="widget-main">' +
+'                                                                   La UR no tiene autorizacion para ingresar mas plazas para este Codigo' +
+'                                                                   <div class="space-6"></div>' +
+'' +
+'                                                                   <div class="widget-toolbox clearfix">' +
+'                                                                       <div class="pull-right action-buttons">' +
+'                                                                           <div class="space-4"></div>' +
+'' +
+'                                                                       </div>' +
+'                                                                   </div>' +
+'                                                               </div>' +
+'                                                           </div>' +
+'                                                       </div>' +
+'                                                   </div>' +
+'' +
+'                                                   <div class="timeline-item clearfix">' +
+'                                                       <div class="timeline-info">' +
+'                                                           <i class="timeline-indicator ace-icon fa fa-user-md btn btn-success no-hover"></i>' +
+'                                                       </div>' +
+'' +
+'                                                       <div class="widget-box transparent">' +
+'                                                           <div class="widget-body">' +
+'                                                               <div class="widget-main"> Registro de Empleado</div>' +
+'                                                                   <div class="pull-right">' +
+'                                                                       <i class="ace-icon fa fa-clock-o bigger-110"></i>' +
+'                                                                       09:30' +
+'                                                                   </div>' +
+
+'                                                           </div>' +
+'                                                       </div>' +
+'                                                   </div>' +
+'                                               </div>'  ;
+
+
+
+
+               $.alert({
+                icon: 'fa fa-check-circle fa-2x fa-fw',
+                title: 'Sistema de Movimientos de Personal',
+                content: contenido,
+                columnClass: 'medium',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'green',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+
+        });
+
+
+
+$('span').click(function(){
+    var IdSpan = event.target.id;
+    var Pendientes =new RegExp(/^pend-item/);
+    if(Pendientes.test(IdSpan)){
+        console.log('Span/Pendiente');
+
+    }
+
+
+console.log('Click sobre span');
+});
+
+
+
+
+$('#paso1').click(function(){
+
+console.log('Se activo el paso2');
+});
+
+     $('#ival').click(function(){
+
+            //alert ('Estatus de la Validacion');
+
+            var contenido='<script>'+
+'$(\'#paso1\').click(function(){'+
+'console.log(\'Se activo el paso2\');'+
+' });'+
+'<\/script>' +
+'<div>' +
+'                                                   <ul class="steps" style="margin-left: 0">'+
+'                                                       <li data-step="1" class="complete">'+
+'                                                           <span id="paso1" class="step">1</span>'+
+'                                                           <span class="title">Captura UR</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="2" class="complete">'+
+'                                                           <span class="step">2</span>'+
+'                                                           <span class="title">Validación</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="3" class="complete">'+
+'                                                           <span class="step">3</span>'+
+'                                                           <span class="title">Personal</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="4" class="complete">'+
+'                                                           <span class="step">4</span>'+
+'                                                           <span class="title">SPC</span>'+
+'                                                       </li>'+
+'                                                   </ul>'+
+'                                               </div> <hr>'  +
+'<p class="alert alert-success">' +
+ '                                                            El movimiento ha sido validado por tosa las instancias y procedera a integrase en el proceso de nomina en la quincena 07 del 2018' +
+  '                                                       </p> '  ;
+
+
+
+
+               $.alert({
+                icon: 'fa fa-check-circle fa-2x fa-fw',
+                title: 'Sistema de Movimientos de Personal',
+                content: contenido,
+                columnClass: 'medium',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'green',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+
+        });
+
+
+
+     $('#ipen').click(function(){
+
+            //alert ('Estatus de la Validacion');
+
+            var contenido=
+            
+          '<div>'+
+'                                                   <ul class="steps" style="margin-left: 0">'+
+'                                                       <li data-step="1" class="complete">'+
+'                                                           <span class="step">1</span>'+
+'                                                           <span class="title">Captura UR</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="2" class="complete">'+
+'                                                           <span class="step">2</span>'+
+'                                                           <span class="title">Validación</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="3" class="complete">'+
+'                                                           <span class="step">3</span>'+
+'                                                           <span class="title">Personal</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="4" class="active">'+
+'                                                           <span class="step" style="border-color:#f3ee54;">4</span>'+
+'                                                           <span class="title">SPC</span>'+
+'                                                       </li>'+
+'                                                   </ul>'+
+'                                               </div> <hr>'  +
+'<p class="alert alert-warning ">' +
+ '  El movimiento esta pendiente de validar por el Servisio Profesional de Carrera  ' +
+  '                                                       </p> '  ;
+
+
+
+
+               $.alert({
+                icon: 'fas fa-clock fa-2x fa-fw',
+                title: 'Sistema de Movimientos de Personal',
+                content: contenido,
+                columnClass: 'medium',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'orange',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+
+        });
+
+
+
+
+
+     $('#irech').click(function(){
+
+            //alert ('Estatus de la Validacion');
+
+            var contenido=
+            
+          '<div>'+
+'                                                   <ul class="steps" style="margin-left: 0">'+
+'                                                       <li data-step="1" class="complete">'+
+'                                                           <span class="step">1</span>'+
+'                                                           <span class="title">Captura UR</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="2" class="complete">'+
+'                                                           <span class="step">2</span>'+
+'                                                           <span class="title">Validación</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="3" class="complete" >'+
+'                                                           <span class="step" style="border-color:#f3145c;"><i class=" ace-icon fa fa-exclamation-triangle red"></i></span>'+
+'                                                           <span class="title">Personal</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step="4" >'+
+'                                                           <span class="step">SPC </span>'+
+'                                                           <span class="title">SPC</span>'+
+'                                                       </li>'+
+'                                                   </ul>'+
+'                                               </div> <hr>'  +
+'<p class="alert alert-danger">' +
+ ' El codigo de puesto no corresponde a la autorizacion de Plazas para la Unidad Responsable ' +
+  '                                                       </p> '  ;
+
+
+
+
+               $.alert({
+                icon: 'fa fa-exclamation-triangle fa-2x fa-fw',
+                title: 'Sistema de Movimientos de Personal',
+                content: contenido,
+                columnClass: 'medium',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'red',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+
+        });
+
+
+        $('#eecb').click(function(){
+            //alert ('Incidencia');
+
+            var dt = new Date();  
+
+            var month = dt.getMonth()+1;  
+            var day = dt.getDate();  
+            var year = dt.getFullYear();  
+            var FechaProceso =month + '-' + day + '-' + year;
+            
+            $.post('ee_panel_buscar.php', { "id": 1, "pzavteid":123 , "fecha_proceso":FechaProceso},
+              function(response,status) {
+                 var string = response;
+               $('#main_page').html(response);
+              }// fin function
+            ); // fin post
+
+
+        });
+
+
+
+
+        $('#smweb-ingreso').click(function(){
+            //alert ('Ingreso de Nuevo Servicor Publico');
+
+            $('#myModal45').modal('show');
+
+
+//            $.post('siap_menu_nuevo.php', { "id": 1, "pzavteid":123 },
+//                  function(response,status) {
+//                        //alert(response);
+//                        var string = response;
+//                        $('#main_page').html(response);
+//                  }// fin function
+//             ); // fin post
+
+        });
+
+        $('#smweb-ingreso-rf').click(function(){
+            //alert ('Ingreso de Nuevo Servicor Publico');
+
+            $('#modal-residentes').modal('show');
+        });
+
+
+        $('#smweb-ingreso-ssa').click(function(){
+            console.log ('smweb-ingreso-ssa');
+
+            
+            $.post('smweb_formulario-ssa.php', { "id": 1, "pzavteid":123 },
+                  function(response,status) {
+                        //alert(response);
+                        var string = response;
+                        $('#main_page').html(response);
+                  }// fin function
+             ); // fin post
+        });
+
+
+
+
+        $('#smweb-residentes').click(function(){
+            //alert ('Ingreso de Nuevo Servicor Publico');
+
+            $('#modal-residentes').modal('show');
+
+
+//            $.post('siap_menu_nuevo.php', { "id": 1, "pzavteid":123 },
+//                  function(response,status) {
+//                        //alert(response);
+//                        var string = response;
+//                        $('#main_page').html(response);
+//                  }// fin function
+//             ); // fin post
+
+        });
+
+
+
+        $('#smweb-baja').click(function(){
+
+            $.alert({
+                icon: 'fa fa-exclamation-triangle fa-2x fa-fw',
+                title: 'Sistema de Movimientos de Personal',
+                content: '<h1> En Construcción</h1>',
+                columnClass: 'medium',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'orange',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+
+        });
+
+
+        $('#guardarVacantes').click(function(){
+
+            // alert('Antes de enviar formulario');
+            var varArea = $('#inputBuscarArea').val();
+            var varPuesto = $('#inputBuscarPuesto').val();
+            var varUnidad = $('#inputBuscarUnidad').val();
+            var varTrabajador = $('#inputTrabajador').val();
+            var varConvocatoria = $('#inputConvocatoria').val();            
+            var varPeriodo = $('#inputPeriodo').val();            
+            var plazaVacanteId =$('#inputPlazaVacanteId').val();            
+            //alert(varArea);
+            $.post("trns_vacantes_guardar.php", 
+                        { 
+                            VacanteId:plazaVacanteId,
+                            convocatoria: varConvocatoria
+                        }
+                )
+                .done(function( data ) {
+                   
+                        $('#inputBuscarArea').val('');
+                        $('#inputBuscarPuesto').val('');
+                        $('#inputBuscarUnidad').val('');
+                        $('#inputTrabajador').val('');
+                        $('#inputConvocatoria').val('');            
+                        $('#inputPeriodo').val('');            
+                        $('#inputPlazaVacanteId').val(''); 
+                        $('#inputBuscarArea').focus(); 
+                        $('#inputEstadoTrabajador').val('');
+                        alert('Informacion Guardada Correctamente');
+
+                });
+            });
+
+
+            $('#inputBuscarArea').autocomplete(
+            {
+                source : 'buscar_area.php',
+                select: function(event, ui)
+                {  
+                    var unidadId = ui.item.UNIDADES_ID;
+                    var plazavacanteId = ui.item.PLAZAVACANTE_ID;
+
+                    $.post('buscar_area_contar.php', 
+                        { 
+                                "id": unidadId,
+                                "pzavteid":plazavacanteId 
+                        },
+                      function(response,status) 
+                      {
+                        //alert(response);
+                        if(response==1){
+                          //  alert('UNO');
+                            $.post('buscar_area_datos.php', { "id": unidadId, "pzavteid":plazavacanteId },
+                                      function(response,status) {
+                                            //alert(response);
+                                            var string = response;
+                                            var ArrVacante = string.split("|");
+                                            $('#inputBuscarPuesto').val(ArrVacante[0])  ;        
+                                            $('#inputBuscarUnidad').val(ArrVacante[1]) ;        
+                                            $('#inputEstadoTrabajador').val(ArrVacante[2]) ;   
+                                            $('#inputBuscarPuesto').prop('disabled', true);     
+                                            $('#inputBuscarUnidad').prop('disabled', true);     
+                                            $('#inputEstadoTrabajador').prop('disabled', true);     
+                                            $('#inputPlazaVacanteId').val(plazavacanteId);
+
+                                            $( '#inputConvocatoria' ).focus();
+
+                                      }// fin function
+                            ); // fin post
+                        }
+                        else{
+                            //alert('mas de UNO');
+                            //$('#vacantes').modal('show');
+
+                            //$('#vacantes').modal(data-remote="trns_vacantes_listar_reg.php",data-show="true")
+                        }
+                            
+
+                        //$('#contenido').html(response);
+                      }
+                    );
+
+
+
+                    //$('#inputBuscarArea').value = ui.item.DESCRIPCION;
+
+                    //alert(ui.item.DESCRIPCION);
+                    
+                
+                } 
+            });
+
+            $('#inputBuscarPuesto').autocomplete(
+            {
+                source : 'buscar_puesto.php',
+                select: function(event, ui)
+                {   
+
+                    $('#inputBuscarPuesto').value=ui.item.id;
+
+                } 
+            });
+
+
+            $('#inputBuscarUnidad').autocomplete(
+            {
+                source : 'buscar_unidad.php',
+                select: function(event, ui)
+                {   
+
+                    $('#inputBuscarUnidad').value=ui.item.id;
+
+                } 
+            });
+
+
+
+        $('#btn-logout').click(function(){
+            console.log('btn-logout');
+                            window.location.href = "../logout.php";
+                return false;
+
+           }); 
+
+		$('a').click(function(){
+			var IdQna = event.target.id;
+			var reg = new RegExp(/^vac-noseusa/);
+            var Confianza = new RegExp(/^vac-confianza/);
+            var Base = new RegExp(/^vac-base/);
+            var Eventual = new RegExp(/^vac-eventual/);
+            var Interino = new RegExp(/^vac-interino/);
+            var Provisional = new RegExp(/^vac-provisional/);
+            var RFMedRes = new RegExp(/^vac-rf-mr/);
+            var RFCarSal = new RegExp(/^vac-rf-cs/);
+            var RFIntPre = new RegExp(/^vac-rf-ip/);
+            var RFSSAreaMed = new RegExp(/^vac-rf-ssam/);
+
+            console.log( IdQna);
+
+       if( RFSSAreaMed.test(IdQna)){            
+            var ContURL='url:smweb_rf-ssam.php';
+            var BaderaVacantes=1;
+        } // fin de    if( RFSSAreaMed.test(IdQna))
+
+
+       if( RFIntPre.test(IdQna)){            
+            var ContURL='url:smweb_rf-ip.php';
+            var BaderaVacantes=1;
+        } // fin de    if( RFIntPre.test(IdQna))
+
+
+        if( RFCarSal.test(IdQna)){            
+            var ContURL='url:smweb_rf-cs.php';
+            var BaderaVacantes=1;
+        } // fin de    if( RFCarSal.test(IdQna))
+
+
+
+
+        if( RFMedRes.test(IdQna)){            
+            var ContURL='url:smweb_rf-mr.php';
+            var BaderaVacantes=1;
+        } // fin de    if( RFMedRes.test(IdQna))
+
+
+
+
+
+        if( Confianza.test(IdQna)){            
+            var ContURL='url:movi_confianza.php';
+            var BaderaVacantes=1;
+        } // fin de    if( Confianza.test(IdQna))
+
+        if( Base.test(IdQna)){            
+            var ContURL='url:movi_base.php';
+            var BaderaVacantes=1;
+        } // fin de    if( Confianza.test(IdQna))
+
+        if( Eventual.test(IdQna)){            
+            var ContURL='url:movi_eventual.php';
+            var BaderaVacantes=1;
+        } // fin de    if( Confianza.test(IdQna))
+
+        if( Interino.test(IdQna)){            
+            var ContURL='url:movi_interino.php';
+            var BaderaVacantes=1;
+        } // fin de    if( Confianza.test(IdQna))
+
+        if( Provisional.test(IdQna)){            
+            var ContURL='url:movi_provisional.php';
+            var BaderaVacantes=1;
+        } // fin de    if( Confianza.test(IdQna))
+
+
+        if(BaderaVacantes==1){
+              Noe = $.confirm({
+                icon: 'fa fa-users fa-2x',
+                title: 'Sistema de Movimientos de Personal',
+                content: ContURL,
+                columnClass: 'large',
+                animationSpeed:800,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                 animationBounce: 1.5,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'blue',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+        }       
+
+		if( reg.test(IdQna && false)){
+            $('#myModal45 .close').click();
+            $.post('siap_menu_nuevo_opc_2.php', { "id": 1, "pzavteid":123 },
+              function(response,status) {
+                    //alert(response);
+                    var string = response;
+                    $('#main_page').html(response);
+              }// fin function
+            ); // fin post
+		}
+        else {
+            if(IdQna == 'Qhis') {   
+                var varhtml ='?'+ $('#Qhis').attr('href');
+                $('#contenido').load( "ptfma_historico.php"+ varhtml);
+                return false;
+              }
+       }
+	}
+);
+
+
+
+
+</script>
+
+
+			</body>
+			</html>
+	

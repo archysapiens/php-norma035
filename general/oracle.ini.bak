@@ -1,0 +1,14 @@
+;###############################################
+; Secretaria de Salud
+; Archivo de configuracion de conexiones
+; y parametros de operacion del sistema
+; de recepcion de archvios de Nómina
+;###############################################
+
+[CONEXION_A_SERVICODOR]
+servidor = 10.67.8.242
+usuario  = system
+password = oracle
+base_ssa = xe
+CHARSET= UTF8
+CLIENT_INFO='AnyCo Corp.' 
