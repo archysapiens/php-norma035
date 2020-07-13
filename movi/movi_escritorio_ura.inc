@@ -17,12 +17,17 @@ case 0:     $Tab = "
                                 <tr>
 
                                     <td>
+									
+									<img alt=\"image\" class=\"img-circle\" src=\"../images/andres.jpg\" style=\"  width: 75px;\">
+									
+									<!--
                                         <span class=\"label label-success arrowed\" style=\"font-size:15px\" >Aprobado</span>
+									-->
                                     </td>
 
                                     <td class=\"issue-info\">
                                         <a href=\"#\" id=\"href-rfc1\">
-                                            4001 - Alta A Personal De Base
+                                            Juan Andres Lara Guerra
                                         </a>
 
                                         <small>
@@ -34,13 +39,13 @@ case 0:     $Tab = "
                                         Juan Lopez Arellano
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
 
                                     <td>
                                        
                                        <a href=\"#\" id=\"ifomope\" class=\"btn btn-app btn-outline  btn-success\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
+                                       <i class=\"fa fa-smile-o fa-2x\"></i>  </a>
                                     </td>
                                     <td class=\"text-right\">
 
@@ -52,11 +57,14 @@ case 0:     $Tab = "
                                 </tr>
                                 <tr>
                                     <td>
+									<img alt=\"image\" class=\"img-circle\" src=\"../images/ernesto.jpg\" style=\"  width: 75px;\">
+									<!--
                                         <span class=\"label label-success arrowed\" style=\"font-size:15px\" >Aprobado</span>
+										-->
                                     </td>
                                     <td class=\"issue-info\">
                                         <a href=\"#\"  id=\"href-rfc2\">
-                                            4002 - Alta A Personal De Confianza
+                                            Ernesto Garcia Mendoza
                                         </a>
 
                                         <small>
@@ -67,7 +75,7 @@ case 0:     $Tab = "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
 
                                     <td>
@@ -85,11 +93,15 @@ case 0:     $Tab = "
                                 </tr>
                                 <tr>
                                     <td>
+									<img alt=\"image\" class=\"img-circle\" src=\"../images/maria.jpg\" style=\"  width: 75px;\">
+									<!--
+									
                                         <span class=\"label label-success arrowed\" style=\"font-size:15px\" >Aprobado</span>
+										-->
                                     </td>
                                     <td class=\"issue-info\">
                                         <a href=\"#\" id=\"href-rfc3\">
-                                           4003 - Alta A Personal Provisional
+                                           Anna Mendoza Ramirez
                                         </a>
 
                                         <small>
@@ -100,7 +112,7 @@ case 0:     $Tab = "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                        
@@ -117,7 +129,7 @@ case 0:     $Tab = "
                                 </tr>
 
 
-
+<!--
                                 
                                 <tr>
 
@@ -136,10 +148,10 @@ case 0:     $Tab = "
                                     </td>
 
                                     <td>
-                                        Juan Lopez Arellano
+                                        Departamente
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                        
@@ -171,7 +183,7 @@ case 0:     $Tab = "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                        
@@ -203,7 +215,7 @@ case 0:     $Tab = "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                        
@@ -239,7 +251,7 @@ case 0:     $Tab = "
                                         Monica Contreras Romero
                                     </td>
                                     <td>
-                                        01.10.2015 11:02 pm
+                                        01.10.2020 11:02 pm
                                     </td>
                                     <td>
                                        
@@ -256,13 +268,20 @@ case 0:     $Tab = "
 
                                 </tr>
 
+-->
+
+
                                 <tr>
                                     <td>
+									<img alt=\"image\" class=\"img-circle\" src=\"../images/rocio.jpg\" style=\"  width: 75px;\">
+									<!--
                                         <span class=\"label label-warning\">Pendiente</span>
+										
+										-->
                                     </td>
                                     <td class=\"issue-info\">
                                         <a href=\"#\">
-                                          5602 - Alta En Sistema Por Promoción O Descenso     
+                                          Rocio Ruiz Samaniego
                                         </a>
 
                                         <small>
@@ -273,7 +292,7 @@ case 0:     $Tab = "
                                         Alejandro Hernández López
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
 
 
@@ -284,20 +303,25 @@ case 0:     $Tab = "
                                     </td>
                                     <td class=\"text-right\">
 
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
+                                        <a href=\"#\" id=\"ipen\" class=\"btn btn-app btn-outline btn-warning\" >
                                        <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
 
                                     </td>
 
 
                                 </tr>
+								
                                 <tr>
                                     <td>
+									<img alt=\"image\" class=\"img-circle\" src=\"../images/raul.jpg\" style=\"  width: 75px;\">
+									
+									<!--
                                         <span class=\"label label-warning\">Pendiente</span>
+										-->
                                     </td>
                                     <td class=\"issue-info\">
                                         <a href=\"#\">
-                                          5604 - Alta En Sistema Por Promoción O Descenso Escalafonario  
+                                          Raul Molina Monroy  
                                         </a>
 
                                         <small>
@@ -308,7 +332,7 @@ case 0:     $Tab = "
                                         Marco Antonio Garcia Zepeda
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
 
                                     <td>
@@ -318,437 +342,17 @@ case 0:     $Tab = "
                                     </td>
                                     <td class=\"text-right\">
 
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
+                                        <a href=\"#\" id=\"irech\" class=\"btn btn-app btn-outline btn-danger\" >
+										                      
                                        <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
 
                                     </td>
 
                                 </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                            4001 - Alta A Personal De Base  
-                                        </a>
-
-                                        <small>
-                                            CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Carolina Segundo Apolina
-                                    </td>
-                                    <td>
-                                        11.03.2015 07:30 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4002 - Alta A Personal De Confianza 
-                                        </a>
-
-                                        <small>
-                                            SOPORTE ADMINISTRATIVO A/ CENTRO NACIONAL PARA LA PREVENCION DE ACCIDENTES
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Alejandro Hernández López
-                                    </td>
-                                    <td>
-                                        28.11.2015 05:10 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4003 - Alta A Personal Provisional   
-                                        </a>
-
-                                        <small>
-                                             DEPARTAMENTO DE LEGISLACION/ COMISION NACIONAL CONTRA LAS ADICCIONES
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Marco Antonio Garcia Zepeda
-                                    </td>
-                                    <td>
-                                        18.09.2015 06:20 pm
-                                    </td>
-
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4004 - Alta A Personal Interino
-                                        </a>
-
-                                        <small>
-                                             CITOTECNOLOGO B/ COMISION COORDINADORA DE LOS INSTITUTOS NACIONALES DE SALUD Y HOSPITALES DE ALTA ESPECIALIDAD
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Carolina Segundo Apolina
-                                    </td>
-                                    <td>
-                                        11.03.2015 07:30 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4008 - Alta A Personal De Recursos Humanos En Formación
-                                        </a>
-
-                                        <small>
-                                             DIRECCION DE DERECHOS HUMANOS E INVESTIGACION NORMATIVA EN SALUD/ DIRECCION GENERAL. DE PROGRAMACION, ORGANIZACION Y PRESUPUESTO
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Carmen Cruz Hernandez
-                                    </td>
-                                    <td>
-                                        05.04.2015 08:40 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                        4006 - Alta A Contrato De Honorarios
-                                            
-                                        </a>
-
-                                        <small>
-                                            DEPARTAMENTO DE APOYO A LA INVESTIGACION/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Monica Mendoza Sanchez
-                                    </td>
-                                    <td>
-                                        10.06.2014 08:10 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-
-
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-warning\">Pendiente</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4001 - Alta A Personal De Base   
-                                        </a>
-
-                                        <small>
-                                             SOPORTE ADMINISTRATIVO C/ COORDINACION GENERAL DE ASUNTOS JURIDICOS Y DERECHOS HUMANOS
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Anna Paola Romero Maldonado
-                                    </td>
-                                    <td>
-                                        13.05.2014 09:20 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-warning\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4003 - Alta A Personal Provisional
-                                        </a>
-
-                                        <small>
-                                            PARAMEDICO EN AREA NORMATIVA/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Adrian Dominguez Lopez
-                                    </td>
-                                    <td>
-                                        12.02.2015 10:00 am
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                            4008 - Alta A Personal De Recursos Humanos En Formación 
-                                        </a>
-
-                                        <small>
-                                            APOYO ADMINISTRATIVO EN SALUD A5/ SUBSECRETARIA DE PREVENCION Y PROMOCION DE LA SALUD
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Aaaron Cruz Hernandez
-                                    </td>
-                                    <td>
-                                        10.02.2015 05:32 am
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                        4003 - Alta A Personal Provisional
-                                            
-                                        </a>
-
-                                        <small>
-                                            DEPARTAMENTO DE CONTROL DE INFORMACION DE PROYECTOS/ DIRECCION GENERAL DE PROMOCION DE LA SALUD
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Antonio Santana Salviter
-                                    </td>
-                                    <td>
-                                        02.03.2015 06:02 am
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4001 - Alta A Personal De Base   
-                                        </a>
-
-                                        <small>
-                                             COORDINACION ADMINISTRATIVA DE LA UNIDAD DE ANALISIS ECONOMICO/ SECRETARIADO TECNICO DEL CONSEJO NACIONAL DE SALUD MENTAL
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Monica Cruz Cruz
-                                    </td>
-                                    <td>
-                                        01.10.2015 11:02 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4003 - Alta A Personal Provisional
-                                        </a>
-
-                                        <small>
-                                             SUBDIRECCION DE CUADRO BASICO Y CATALOGO DE INSTRUMENTAL Y EQUIPO AUXILIARES DE DIAGNOSTICO Y MATERI/ SUBSECRETARIA DE ADMINISTRACION Y FINANZAS
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Alejandro Alvarez Longinos
-                                    </td>
-                                    <td>
-                                        28.11.2015 05:10 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class=\"label label-danger\">Rechazado</span>
-                                    </td>
-                                    <td class=\"issue-info\">
-                                        <a href=\"#\">
-                                           4008 - Alta A Personal De Recursos Humanos En Formación   
-                                        </a>
-
-                                        <small>
-                                            SUBDIRECCION DE RECURSOS ADMINISTRATIVOS/ DIRECCION GENERAL DE RECURSOS MATERIALES Y SERVICIOS GENERALES
-                                        </small>
-                                    </td>
-                                    <td>
-                                        Marco Antonio Villegas Olalde
-                                    </td>
-                                    <td>
-                                        18.09.2015 06:20 pm
-                                    </td>
-                                    <td>
-                                       
-                                       <a href=\"#\" class=\"disabled btn btn-app btn-outline  btn-default\" >
-                                       <i class=\"fa fa-print fa-2x\"></i>  </a>
-                                    </td>
-                                    <td class=\"text-right\">
-
-                                        <a href=\"#\" class=\"btn btn-app btn-outline btn-danger\" >
-                                       <i class=\"fa fa-info-circle fa-2x\"></i>  </a>
-
-                                    </td>
-                                </tr>
+								
+<!--								
+								
+-->								
                                 </tbody>
                             </table>
 
@@ -779,7 +383,7 @@ case     1: $Tab= "
                                         Juan Lopez Arellano
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
 
                                     <td>
@@ -812,7 +416,7 @@ case     1: $Tab= "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
 
                                     <td>
@@ -845,7 +449,7 @@ case     1: $Tab= "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                        
@@ -884,7 +488,7 @@ case     1: $Tab= "
                                         Juan Lopez Arellano
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                        
@@ -916,7 +520,7 @@ case     1: $Tab= "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                        
@@ -948,7 +552,7 @@ case     1: $Tab= "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                        
@@ -984,7 +588,7 @@ case     1: $Tab= "
                                         Monica Contreras Romero
                                     </td>
                                     <td>
-                                        01.10.2015 11:02 pm
+                                        01.10.2020 11:02 pm
                                     </td>
                                     <td>
                                        
@@ -1034,7 +638,7 @@ case 2: $Tab="
                                         Alejandro Hernández López
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
 
 
@@ -1069,7 +673,7 @@ case 2: $Tab="
                                         Marco Antonio Garcia Zepeda
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
 
                                     <td>
@@ -1102,7 +706,7 @@ case 2: $Tab="
                                         Carolina Segundo Apolina
                                     </td>
                                     <td>
-                                        11.03.2015 07:30 pm
+                                        11.03.2020 07:30 pm
                                     </td>
                                     <td>
                                        
@@ -1135,7 +739,7 @@ case 2: $Tab="
                                         Alejandro Hernández López
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
                                     <td>
                                        
@@ -1167,7 +771,7 @@ case 2: $Tab="
                                         Marco Antonio Garcia Zepeda
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
 
                                     <td>
@@ -1200,7 +804,7 @@ case 2: $Tab="
                                         Carolina Segundo Apolina
                                     </td>
                                     <td>
-                                        11.03.2015 07:30 pm
+                                        11.03.2020 07:30 pm
                                     </td>
                                     <td>
                                        
@@ -1233,7 +837,7 @@ case 2: $Tab="
                                         Carmen Cruz Hernandez
                                     </td>
                                     <td>
-                                        05.04.2015 08:40 pm
+                                        05.04.2020 08:40 pm
                                     </td>
                                     <td>
                                        
@@ -1346,7 +950,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Adrian Dominguez Lopez
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                        
@@ -1379,7 +983,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Aaaron Cruz Hernandez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                        
@@ -1414,7 +1018,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Antonio Santana Salviter
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                        
@@ -1446,7 +1050,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Monica Cruz Cruz
                                     </td>
                                     <td>
-                                        01.10.2015 11:02 pm
+                                        01.10.2020 11:02 pm
                                     </td>
                                     <td>
                                        
@@ -1478,7 +1082,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Alejandro Alvarez Longinos
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
                                     <td>
                                        
@@ -1510,7 +1114,7 @@ case 3 : $Tab="                            <div class=\"table-responsive\" id=\"
                                         Marco Antonio Villegas Olalde
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
                                     <td>
                                        
@@ -1554,7 +1158,7 @@ return "
                         NOM-035
                     </a>
                 </li>
-
+<!--
                 <li>
                     <a data-toggle=\"tab\" href=\"#feed\">
                         <i class=\"green ace-icon fa fa-check bigger-220\"></i>
@@ -1575,6 +1179,7 @@ return "
                         Rechazados
                     </a>
                 </li>
+-->				
             </ul>
 
             <div class=\"tab-content no-border padding-24\">
@@ -1646,6 +1251,72 @@ return "
 
                 <div class=\"col-lg-12\" style=\"  padding-left: 0px;\>
                     <div class=\"ibox\">
+
+
+
+     <div class=\"row\">
+                    <div class=\"col-lg-3\">
+                        <div class=\"ibox float-e-margins\">
+                            <div class=\"ibox-title\">
+                                <span class=\"label label-success pull-right\">Bajo</span>
+                                <h5> CONDICIONES AMBIENTALES</h5>
+                            </div>
+                            <div class=\"ibox-content\">
+                                <h1 class=\"no-margins\">20</h1>
+                                <div class=\"stat-percent font-bold text-success\">90% <i class=\"fa fa-bolt\"></i></div>
+                                <small>Total Evaluado</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-lg-3\">
+                        <div class=\"ibox float-e-margins\">
+                            <div class=\"ibox-title\">
+                                <span class=\"label label-info pull-right\">Annual</span>
+                                <h5>RITMO DE TRABAJO</h5>
+                            </div>
+                            <div class=\"ibox-content\">
+                                <h1 class=\"no-margins\">80</h1>
+                                <div class=\"stat-percent font-bold text-info\">20% <i class=\"fa fa-level-up\"></i></div>
+                                <small>New orders</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-lg-3\">
+                        <div class=\"ibox float-e-margins\">
+                            <div class=\"ibox-title\">
+                                <span class=\"label label-primary pull-right\">Today</span>
+                                <h5> ESFUERZO MENTAL</h5>
+                            </div>
+                            <div class=\"ibox-content\">
+                                <h1 class=\"no-margins\">12</h1>
+                                <div class=\"stat-percent font-bold text-navy\">44% <i class=\"fa fa-level-up\"></i></div>
+                                <small>New visits</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"col-lg-3\">
+                        <div class=\"ibox float-e-margins\">
+                            <div class=\"ibox-title\">
+                                <span class=\"label label-danger pull-right\">Low value</span>
+                                <h5>RESPONSABILIDADES</h5>
+                            </div>
+                            <div class=\"ibox-content\">
+                                <h1 class=\"no-margins\">60</h1>
+                                <div class=\"stat-percent font-bold text-danger\">38% <i class=\"fa fa-level-down\"></i></div>
+                                <small>In first month</small>
+                            </div>
+                        </div>
+                   </div>
+
+				   
+        </div>
+		
+		
+		
+		
+
+
+<!--					
                         <div class=\"ibox-title\">
                         <h5>#  &nbsp;&nbsp;&nbsp; </h5>
                             <h5>@</h5>
@@ -1653,6 +1324,8 @@ return "
                                 <a href=\"\" class=\"btn btn-primary btn-xs\">15-jun-2020</a>
                             </div>
                         </div>
+
+						
                         <div class=\"ibox-content\">
 
                             <div class=\"m-b-lg\">
@@ -1667,6 +1340,7 @@ return "
 
                                    </span>
                                 </div>
+								
                                 <div class=\"m-t-md\">
 
 
@@ -1675,6 +1349,7 @@ return "
 
 
                                 </div>
+-->
 
                             </div>
 
@@ -1765,7 +1440,7 @@ return "
                                         Juan Lopez Arellano
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                        
@@ -1795,7 +1470,7 @@ return "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                        <a href=\"#\" class=\"btn  btn-outline btn-success\" style=\" min-width: 50px;\">
@@ -1825,7 +1500,7 @@ return "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                          <a href=\"#\" class=\"btn btn-app btn-outline  btn-primary\" style=\" min-width: 50px;\">
@@ -1860,7 +1535,7 @@ return "
                                         Juan Lopez Arellano
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                       <a href=\"#\" class=\"btn btn-app btn-outline  btn-primary\" style=\" min-width: 50px;\">
@@ -1889,7 +1564,7 @@ return "
                                         Anna Mendoza Ramirez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                        <a href=\"#\" class=\"btn btn-app btn-outline  btn-primary\" style=\" min-width: 50px;\">
@@ -1917,7 +1592,7 @@ return "
                                         Carlos Eduardo Avila Vilchiz
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                          <a href=\"#\" class=\"btn btn-w-m btn-warning\" style=\" min-width: 50px;\">
@@ -1949,7 +1624,7 @@ return "
                                         Monica Contreras Romero
                                     </td>
                                     <td>
-                                        01.10.2015 11:02 pm
+                                        01.10.2020 11:02 pm
                                     </td>
                                     <td>
                                   <a href=\"#\" class=\"btn btn-w-m btn-warning\" style=\" min-width: 50px;\">
@@ -1979,7 +1654,7 @@ return "
                                         Alejandro Hernández López
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
                                     <td>
                                     <a href=\"#\" class=\"btn btn-w-m btn-warning\" style=\" min-width: 50px;\">
@@ -2008,7 +1683,7 @@ return "
                                         Marco Antonio Garcia Zepeda
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
                                     <td>
                                     <a href=\"#\" class=\"btn btn-w-m btn-warning\" style=\" min-width: 50px;\">
@@ -2037,7 +1712,7 @@ return "
                                         Carolina Segundo Apolina
                                     </td>
                                     <td>
-                                        11.03.2015 07:30 pm
+                                        11.03.2020 07:30 pm
                                     </td>
                                     <td>
                                     <a href=\"#\" class=\"btn btn-w-m btn-warning\" style=\" min-width: 50px;\">
@@ -2065,7 +1740,7 @@ return "
                                         Alejandro Hernández López
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 14.92456448073813 11.997074999999999 A 7.99805 7.99805 0 1 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2093,7 +1768,7 @@ return "
                                         Marco Antonio Garcia Zepeda
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 3.296914162902186 14.468608371860547 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2122,7 +1797,7 @@ return "
                                         Carolina Segundo Apolina
                                     </td>
                                     <td>
-                                        11.03.2015 07:30 pm
+                                        11.03.2020 07:30 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 3.296914162902186 14.468608371860547 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2156,7 +1831,7 @@ return "
                                         Carmen Cruz Hernandez
                                     </td>
                                     <td>
-                                        05.04.2015 08:40 pm
+                                        05.04.2020 08:40 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 3.296914162902186 14.468608371860547 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2241,7 +1916,7 @@ return "
                                         Adrian Dominguez Lopez
                                     </td>
                                     <td>
-                                        12.02.2015 10:00 am
+                                        12.02.2020 10:00 am
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 7.998050000000001 0 A 7.99805 7.99805 0 0 1 14.929923740142812 11.987778092642216 Z\" fill=\"#1ab394\"></path><path d=\"M 7.99805 7.99805 L 14.929923740142812 11.987778092642216 A 7.99805 7.99805 0 1 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2270,7 +1945,7 @@ return "
                                         Aaaron Cruz Hernandez
                                     </td>
                                     <td>
-                                        10.02.2015 05:32 am
+                                        10.02.2020 05:32 am
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 3.296914162902186 14.468608371860547 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2298,7 +1973,7 @@ return "
                                         Antonio Santana Salviter
                                     </td>
                                     <td>
-                                        02.03.2015 06:02 am
+                                        02.03.2020 06:02 am
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 14.92456448073813 11.997074999999999 A 7.99805 7.99805 0 1 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2326,7 +2001,7 @@ return "
                                         Monica Cruz Cruz
                                     </td>
                                     <td>
-                                        01.10.2015 11:02 pm
+                                        01.10.2020 11:02 pm
                                     </td>
                                     <td>
                                        <path d=\"M 7.99805 7.99805 L 1.0715355192618716 11.997075000000002 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2355,7 +2030,7 @@ return "
                                         Alejandro Alvarez Longinos
                                     </td>
                                     <td>
-                                        28.11.2015 05:10 pm
+                                        28.11.2020 05:10 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 14.92456448073813 11.997074999999999 A 7.99805 7.99805 0 1 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -2383,7 +2058,7 @@ return "
                                         Marco Antonio Villegas Olalde
                                     </td>
                                     <td>
-                                        18.09.2015 06:20 pm
+                                        18.09.2020 06:20 pm
                                     </td>
                                     <td>
                                         <path d=\"M 7.99805 7.99805 L 3.296914162902186 14.468608371860547 A 7.99805 7.99805 0 0 1 7.998049999999998 0 Z\" fill=\"#d7d7d7\"></path></svg>
@@ -3875,7 +3550,7 @@ $FechaLim <br>
                                     <div class=\"modal-content animated fadeIn\">
                                         <div class=\"modal-header\">
                                             <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>
-                                            <i class=\"fa fa-user-plus modal-icon\"></i>
+                                            <i class=\"fa fa-pencil-square-o modal-icon\"></i>
                                             <h4 class=\"modal-title\"> Encuestas Disponibles </h4>
                                             <small>Norma Oficial Mexicana</small>
                                         </div>
@@ -3895,6 +3570,24 @@ $FechaLim <br>
                             </div>
                             <div class=\"forum-item active\">
                                 <div class=\"row\">
+<div class=\"profile-user-info\">								
+					<div class=\"profile-info-row\">
+												<div class=\"profile-info-name blue\" class=\"col-md-3\"> Nombre: 
+												</div>
+
+												<div class=\"profile-info-value class=\"col-md-9\" \">
+													<div class=\"input-group\">
+														<span class=\"input-group-addon\">
+															<i class=\"blue fa fa-user fa-lg\"></i>
+														</span>
+														<input type=\"text\" value=\"\" id=\"IdEncuesta\" 
+														name=\"inputUsuario\" class=\"form-control\" 
+														placeholder=\"Identificador de la encuesta\" required=\"\" autofocus=\"\">
+													</div>
+												</div>
+						</div>
+</div>
+<!--
                                     <div class=\"col-md-9\">
                                         <div class=\"forum-icon\">
                                             <i class=\"fa fa-hospital-o\"></i>
@@ -3906,17 +3599,42 @@ $FechaLim <br>
                                     <div class=\"col-md-2 forum-info\">
                                         <div>
                                          <span class=\"views-number\">
-                                            
+                                            1
                                         </span>
                                             
                                         </div>
                                     </div>
+									
+	-->								
 
                                 </div>
                             </div>
 
                             <div class=\"forum-item\">
                                 <div class=\"row\">
+
+
+
+<div class=\"profile-user-info\">								
+					<div class=\"profile-info-row\">
+
+							<div class=\"profile-info-name blue\"> Fecha Limite
+							</div>
+
+							<div class=\"profile-info-value  class=\"col-md-9\" \">
+								<div class=\"input-group\">
+										<span class=\"input-group-addon\">
+											<i class=\" blue fa fa-user fa-lg\"></i>
+										</span>
+										<input type=\"date\" value=\"\" id=\"FechaLimite\" name=\"FechaLimite\" class=\"form-control\" placeholder=\"Fecha De Nacimiento\" required=\"\" autofocus=\"\">
+								</div>
+							</div>
+
+					</div>
+</div>
+
+<!--								
+								
                                     <div class=\"col-md-9\">
                                         <div class=\"forum-icon\">
                                             <i class=\"fa fa-user-md\"></i>
@@ -3925,20 +3643,17 @@ $FechaLim <br>
 										Encuesta Laboral De Salida
 										</a>
                                     </div>
-
                                     <div class=\"col-md-2 forum-info\">
                                         <div>
                                          <span class=\"views-number\">
-                                            
-
                                         </span>
-                                            
                                         </div>
                                     </div>
-
+-->
 
                                 </div>
                             </div>
+
 
                             <div class=\"forum-item active\">
                                 <div class=\"row\">
@@ -3946,33 +3661,9 @@ $FechaLim <br>
                                         <div class=\"forum-icon\">
                                             <i class=\"fa fa-user-md\"></i>
                                         </div>
+										
                                         <a id=\"vac-eventual\"  href=\"#\" class=\"forum-item-title\">
-										Capacitación</a>
-                                    </div>
-
-                                    <div class=\"col-md-2 forum-info\">
-                                        <div>
-                                         <span class=\"views-number\">
-                                            
-
-                                        </span>
-                                            
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                            <div class=\"forum-item active\">
-                                <div class=\"row\">
-                                    <div class=\"col-md-9\">
-                                        <div class=\"forum-icon\">
-                                            <i class=\"fa fa-user-md\"></i>
-                                        </div>
-                                        <a id=\"vac-interino\"  href=\"#\" class=\"forum-item-title\">
-										Otro Tipo de ENcuesta
+										     Capacitación
 										</a>
                                     </div>
 
@@ -3989,9 +3680,6 @@ $FechaLim <br>
 
                                 </div>
                             </div>
-
-
-
 
 </div>
 
@@ -4003,7 +3691,7 @@ $FechaLim <br>
                                         </div>
                                         <div class=\"modal-footer\">
                                             <button type=\"button\" class=\"btn btn-white\" data-dismiss=\"modal\">Cerrar</button>
-                                            <button type=\"button\" class=\"btn btn-primary\">Ingresar Datos</button>
+                                            <button id=\"Ingresa-Encuesta\" type=\"button\" class=\"btn btn-primary\">Ingresar Datos</button>
                                         </div>
 
 
@@ -4217,7 +3905,28 @@ return "
 
         });
 
+	$('#Ingresa-Encuesta').click(function(){
+	
+	var Id    = $('#IdEncuesta').val();
+	var Fecha = $('#FechaLimite').val();
+	
+	console.log('Ingresa-Encuesta >>' + Id +'<< ');
+	console.log('Ingresa-Encuesta >>' + Fecha +'<< ');
 
+
+	$.post('movi_encuesta.php', { \"Id\": Id, \"Fecha\":Fecha },
+	function(response,status) {
+		var string = response;
+		$('#main_page').html(response);
+	
+	})
+
+
+	console.log('Ingresa-Encuesta');
+	$('#myModal45').modal('toggle') ;
+		
+	});
+		
 
 
 
@@ -4368,6 +4077,10 @@ return "
                 theme: 'material',
                 type: 'green',
                 buttons: {
+					 'Encuesta Email': {
+							btnClass: 'btn-blue',
+							action: function(){}
+						},
                     Aceptar: {
                          btnClass: 'btn-green',
                          action:function () {
@@ -4379,7 +4092,76 @@ return "
 
         });
 
+$('#smweb-baja').click(function(){
 
+		$.alert({
+			icon: 'fa fa-check-circle fa-2x fa-fw',
+			title: 'Encuesta',
+			content: 'url:form_encuesta.html',
+			type: 'green',
+			//typeAnimated: false,
+			animationSpeed:1000,
+			animationBounce:2,
+			animation: 'zoom',
+			closeAnimation: 'zoom',
+             animationBounce: 1.5,
+
+			theme:'material',
+			
+			buttons: {
+				'Encuesta Email': {
+							btnClass: 'btn-blue',
+							action: function(){
+							var input = this.\$content.find('input#input-name');
+                            var errorText = this.\$content.find('.text-danger');
+							
+							$.alert({
+							icon: 'fa fa-check-circle fa-2x fa-fw',
+							title: 'Encuesta',
+							content: 'url:form_email.html',
+							type: 'green',
+							//typeAnimated: false,
+							animationSpeed:1000,
+							animationBounce:2,
+							animation: 'zoom',
+							closeAnimation: 'zoom',
+							animationBounce: 1.5,
+							theme:'material'
+
+							});
+							
+							
+							}
+				},
+				tryAgain: {
+					text: 'Encuesta',
+					btnClass: 'btn-red',
+					action: function(){
+					
+					var Id    = this.\$content.find('input#input-name');
+					var Fecha = this.\$content.find('input#FechaLimite');
+					
+					console.log('Ingresa-Encuesta >>' + Id +'<< ');
+					console.log('Ingresa-Encuesta >>' + Fecha +'<< ');
+
+
+					$.post('movi_encuesta.php', { \"Id\": 'Mi encuesta', \"Fecha\":'10-Jul-2020' },
+					function(response,status) {
+						var string = response;
+						$('#main_page').html(response);
+					
+					})
+	
+					
+					
+					}
+				},
+				close: function () {
+				}
+			}
+		});
+
+});
 
 
 
@@ -4399,29 +4181,36 @@ console.log('Se activo el paso2');
 '<\/script>' +
 '<div>' +
 '                                                   <ul class=\"steps\" style=\"margin-left: 0\">'+
+
 '                                                       <li data-step=\"1\" class=\"complete\">'+
 '                                                           <span id=\"paso1\" class=\"step\">1</span>'+
-'                                                           <span class=\"title\">Captura UR</span>'+
+'                                                           <span class=\"title\">Condiciones en el ambiente de trabajo</span>'+
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"2\" class=\"complete\">'+
 '                                                           <span class=\"step\">2</span>'+
-'                                                           <span class=\"title\">Validación</span>'+
+'                                                           <span class=\"title\">Carga de trabajo</span>'+
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"3\" class=\"complete\">'+
 '                                                           <span class=\"step\">3</span>'+
-'                                                           <span class=\"title\">Personal</span>'+
+'                                                           <span class=\"title\">Falta de control sobre el trabajo </span>'+
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"4\" class=\"complete\">'+
 '                                                           <span class=\"step\">4</span>'+
-'                                                           <span class=\"title\">SPC</span>'+
+'                                                           <span class=\"title\">Organización del tiempo de trabajo</span>'+
 '                                                       </li>'+
+''+
+'                                                       <li data-step=\"4\" class=\"complete\">'+
+'                                                           <span class=\"step\">4</span>'+
+'                                                           <span class=\"title\">Liderazgo y relaciones en el trabajo</span>'+
+'                                                       </li>'+
+
 '                                                   </ul>'+
 '                                               </div> <hr>'  +
 '<p class=\"alert alert-success\">' +
- '                                                            El movimiento ha sido validado por tosa las instancias y procedera a integrase en el proceso de nomina en la quincena 07 del 2018' +
+ '     Es necesario una mayor difusión de la política de prevención de riesgos psicosociales y programas para: la prevención de los factores de riesgo psicosocial, la promoción de un entorno organizacional favorable y la prevención de la violencia laboral.' +
   '                                                       </p> '  ;
 
 
@@ -4429,9 +4218,10 @@ console.log('Se activo el paso2');
 
                $.alert({
                 icon: 'fa fa-check-circle fa-2x fa-fw',
-                title: 'Sistema de Movimientos de Personal',
+                title: 'Identificación y Análisis De Los Factores De Riesgo Psicosocial',
                 content: contenido,
-                columnClass: 'medium',
+				columnClass: 'large',
+                //columnClass: 'medium',
                 animationSpeed:800,
                 animationBounce:1,
                 animation: 'zoom',
@@ -4462,25 +4252,34 @@ console.log('Se activo el paso2');
             
           '<div>'+
 '                                                   <ul class=\"steps\" style=\"margin-left: 0\">'+
+
+
 '                                                       <li data-step=\"1\" class=\"complete\">'+
-'                                                           <span class=\"step\">1</span>'+
-'                                                           <span class=\"title\">Captura UR</span>'+
+'                                                           <span id=\"paso1\" class=\"step\">1</span>'+
+'                                                           <span class=\"title\">Condiciones en el ambiente de trabajo</span>'+
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"2\" class=\"complete\">'+
-'                                                           <span class=\"step\">2</span>'+
-'                                                           <span class=\"title\">Validación</span>'+
+'                                                           <span class=\"step\" style=\"border-color:#f3ee54;\" >2</span>'+
+'                                                           <span class=\"title\">Carga de trabajo</span>'+
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"3\" class=\"complete\">'+
 '                                                           <span class=\"step\">3</span>'+
-'                                                           <span class=\"title\">Personal</span>'+
+'                                                           <span class=\"title\">Falta de control sobre el trabajo </span>'+
 '                                                       </li>'+
 ''+
-'                                                       <li data-step=\"4\" class=\"active\">'+
+'                                                       <li data-step=\"4\" class=\"complete\">'+
 '                                                           <span class=\"step\" style=\"border-color:#f3ee54;\">4</span>'+
-'                                                           <span class=\"title\">SPC</span>'+
+'                                                           <span class=\"title\">Organización del tiempo de trabajo</span>'+
 '                                                       </li>'+
+''+
+'                                                       <li data-step=\"4\" class=\"complete\">'+
+'                                                           <span class=\"step\">4</span>'+
+'                                                           <span class=\"title\">Liderazgo y relaciones en el trabajo</span>'+
+'                                                       </li>'+
+
+
 '                                                   </ul>'+
 '                                               </div> <hr>'  +
 '<p class=\"alert alert-warning \">' +
@@ -4492,9 +4291,9 @@ console.log('Se activo el paso2');
 
                $.alert({
                 icon: 'fas fa-clock fa-2x fa-fw',
-                title: 'Sistema de Movimientos de Personal',
+                title: 'Identificación Y Análisis De Los Factores De Riesgo Psicosocial',
                 content: contenido,
-                columnClass: 'medium',
+                columnClass: 'large',
                 animationSpeed:800,
                 animationBounce:1,
                 animation: 'zoom',
@@ -4527,6 +4326,39 @@ console.log('Se activo el paso2');
             
           '<div>'+
 '                                                   <ul class=\"steps\" style=\"margin-left: 0\">'+
+
+
+
+'                                                       <li data-step=\"1\" class=\"complete\">'+
+'                                                           <span id=\"paso1\" class=\"step\">1</span>'+
+'                                                           <span class=\"title\">Condiciones en el ambiente de trabajo</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"2\" class=\"complete\">'+
+'                                                           <span class=\"step\" style=\"border-color:#f3145c;\" >2</span>'+
+'                                                           <span class=\"title\">Carga de trabajo</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"3\" class=\"complete\">'+
+'                                                           <span class=\"step\">3</span>'+
+'                                                           <span class=\"title\">Falta de control sobre el trabajo </span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"4\" class=\"complete\">'+
+'                                                           <span class=\"step\" style=\"border-color:#f3145c;\">4</span>'+
+'                                                           <span class=\"title\">Organización del tiempo de trabajo</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"4\" class=\"complete\">'+
+'                                                           <span class=\"step\">4</span>'+
+'                                                           <span class=\"title\">Liderazgo y relaciones en el trabajo</span>'+
+'                                                       </li>'+
+
+
+
+
+/**
+
 '                                                       <li data-step=\"1\" class=\"complete\">'+
 '                                                           <span class=\"step\">1</span>'+
 '                                                           <span class=\"title\">Captura UR</span>'+
@@ -4538,7 +4370,8 @@ console.log('Se activo el paso2');
 '                                                       </li>'+
 ''+
 '                                                       <li data-step=\"3\" class=\"complete\" >'+
-'                                                           <span class=\"step\" style=\"border-color:#f3145c;\"><i class=\" ace-icon fa fa-exclamation-triangle red\"></i></span>'+
+'                                                           <span class=\"step\" style=\"border-color:#f3145c;\">
+										<i class=\"ace-icon fa fa-exclamation-triangle red\"></i></span>'+
 '                                                           <span class=\"title\">Personal</span>'+
 '                                                       </li>'+
 ''+
@@ -4546,6 +4379,9 @@ console.log('Se activo el paso2');
 '                                                           <span class=\"step\">SPC </span>'+
 '                                                           <span class=\"title\">SPC</span>'+
 '                                                       </li>'+
+
+**/
+
 '                                                   </ul>'+
 '                                               </div> <hr>'  +
 '<p class=\"alert alert-danger\">' +
@@ -4557,9 +4393,9 @@ console.log('Se activo el paso2');
 
                $.alert({
                 icon: 'fa fa-exclamation-triangle fa-2x fa-fw',
-                title: 'Sistema de Movimientos de Personal',
+                title: 'Identificación y Análisis De Los Factores De Riesgo Psicosocial',
                 content: contenido,
-                columnClass: 'medium',
+                columnClass: 'large',
                 animationSpeed:800,
                 animationBounce:1,
                 animation: 'zoom',
@@ -4614,6 +4450,7 @@ console.log('Se activo el paso2');
 
         });
 
+/***
         $('#smweb-baja').click(function(){
 
             //alert ('Baja de  Servicor Publico');
@@ -4621,7 +4458,7 @@ console.log('Se activo el paso2');
 
         });
 
-
+**/
         $('#smweb-residentes').click(function(){
 
             alert ('Medicos Residentes');
@@ -4823,7 +4660,7 @@ console.log('Se activo el paso2');
         }       
 
 		if( reg.test(IdQna && false)){
-            $('#myModal45 .close').click();
+            $('#myModal45.close').click();
             $.post('siap_menu_nuevo_opc_2.php', { \"id\": 1, \"pzavteid\":123 },
               function(response,status) {
                     //alert(response);

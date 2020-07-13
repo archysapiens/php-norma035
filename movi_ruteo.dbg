@@ -3,6 +3,6 @@ method >POST<
 sql >select mu.EMAIL, mu.CLAVE_ACCESO, mur.UR, mur.DESCRIPCION DESCRIPCION_UR, mp.ESTATUS, mr.ID, mr.DESCRIPCION, msp.RFC , msp.NOMBRE
 	from MOVI_USUARIOS mu, MOVI_UR mur, MOVI_PRIVILEGIOS mp, MOVI_ROLES mr, MOVI_SERVIDORES_PUBLICOS msp
 	where mu.MOVI_UR_ID=mur.ID and mu.ID=mp.MOVI_USUARIOS_ID and mp.MOVI_ROLES_ID=mr.ID and
-	msp.RFC=mu.MOVI_SERVIDORES_PUBLICOS_RFC and mu.EMAIL='noe.alvarezs@yahoo.com' and  mu.CLAVE_ACCESO='123' and 
+	msp.RFC=mu.MOVI_SERVIDORES_PUBLICOS_RFC and mu.EMAIL='noe.admin@salud.gob.mx' and  mu.CLAVE_ACCESO='123' and 
 	mp.ESTATUS='A' order by mr.ID< 
 TotalRegistros >4< 

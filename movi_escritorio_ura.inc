@@ -3871,7 +3871,7 @@ $FechaLim <br>
                                     <div class=\"modal-content animated fadeIn\">
                                         <div class=\"modal-header\">
                                             <button type=\"button\" class=\"close\" data-dismiss=\"modal\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button>
-                                            <i class=\"fa fa-user-plus modal-icon\"></i>
+                                            <i class=\"fa fa-pencil-square-o  modal-icon\"></i>
                                             <h4 class=\"modal-title\"> Vacantes Disponibles</h4>
                                             <small>513 DIRECCION GENERAL DE RECURSOS HUMANOS</small>
                                         </div>
